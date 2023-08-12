@@ -435,11 +435,13 @@ footer{
 
 .home-personal-content a{
     padding: 8px 10px;
+    display: block;
 }
 
 @media screen and (min-width:568px) {
    .home-personal-content a {
        padding:8px 10px;
+       color:red;
    }
 }
 
