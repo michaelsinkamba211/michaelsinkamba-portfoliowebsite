@@ -395,9 +395,7 @@ footer{
         margin: 0 auto;
     }
 
-    .home-personal-content a{
-        padding: 8px 30px;
-    }
+
 }
 
 
@@ -432,16 +430,30 @@ footer{
         margin: 0 auto;
     }
 
-    .home-personal-content a{
-        padding: 8px 30px;
-    }
+    
 }
 
 .home-personal-content a{
     padding: 8px 10px;
 }
 
+@media screen and (min-width:568px) {
+   .home-personal-content a {
+       padding:8px 10px;
+   }
+}
 
+@media screen and (min-width:768px) {
+   .home-personal-content a {
+       padding:10px 20px;
+   }
+}
+
+@media screen and (min-width:900px) {
+   .home-personal-content a {
+       padding:8px 30px;
+   }
+}
 
 
 
