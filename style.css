@@ -70,11 +70,7 @@ footer{
 
 /* responsive design will be from */
 
-/* computer 900 >  */
 
-
-/* tablet - 900 below  */
-/* phone 568 below */
 
 .main-header .main-nav{
     height: 100%;
@@ -190,10 +186,8 @@ footer{
     color:#fff;
 }
 
-.home-links{
-    display: flex;
-    justify-content: center;
-}
+
+
 
 @media screen and (max-width:750px){
     .main-header .main-nav .main-ul{
@@ -216,7 +210,7 @@ footer{
     }
 
     .cv_for_mobile,
-.hire-me {
+    .hire-me {
     display: block;
 }
 
@@ -337,20 +331,7 @@ footer{
     margin-bottom: 20px;
 }   
 
-.home-personal-content a{
-    display: block;
-    text-align: center;
-    padding: 8px 10px;
-    border-radius: 40em;
-    margin: 0 auto;
-    background-color: #bbb;
-    color: blue;
-}
 
-.home-personal-content a:hover{
-    background-color: var(--main-color);
-    color: #fff;
-}
 .home .home-image{
     order: 3;
     display: flex;
@@ -359,6 +340,36 @@ footer{
 .home .home-image img{
     width: 85%;
 }
+
+
+.home-personal-content .home-links a:hover{
+    background-color: var(--main-color);
+    color: #fff;
+}
+
+.home-personal-content .home-links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    color: blue;
+    width: 100%;
+}
+.home-personal-content .home-links a{
+    display: block;
+    width: fit-content;
+    margin: 0 10px;
+    background-color: #bbb;
+    color: blue;
+    padding: 5px 15px;
+    border-radius: 40em;
+}
+
+@media all and (min-width:568px) {
+    .home-personal-content .home-links a {
+        padding: 5px 25px;
+    }
+ }
 
 /* resposive for home */
 
@@ -433,29 +444,16 @@ footer{
     
 }
 
-.home-personal-content a{
+/* .home-personal-content .home-links a{
     padding: 8px 10px;
     display: block;
-}
+} */
 
-@media screen and (min-width:568px) {
-   .home-personal-content a {
-       padding:8px 10px;
-       color:red;
-   }
-}
 
-@media screen and (min-width:768px) {
-   .home-personal-content a {
-       padding:10px 20px;
-   }
-}
+ 
 
-@media screen and (min-width:900px) {
-   .home-personal-content a {
-       padding:8px 30px;
-   }
-}
+
+
 
 
 
@@ -493,12 +491,6 @@ footer{
     justify-content: center;
 }
 
-/* .about .about-me{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    width: 90%;
-    margin: 0 auto;
-} */
 
 .about .about-me .personal-info,
 .about .about-me .introduction,
@@ -558,6 +550,11 @@ footer{
 .about .about-me .personal-info .cv{
     width: 200px;
     grid-area: cv;
+}
+
+.about .about-me .personal-info li{
+    text-decoration: none;
+    list-style: none;
 }
 
 
@@ -1159,6 +1156,4 @@ footer .logo .ceo{
 section{
     width: 100%;
 }
-
-
 
