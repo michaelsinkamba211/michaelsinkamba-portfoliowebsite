@@ -54,46 +54,7 @@
         
     </header>
 
-<script>
-        const menuInput = document.getElementById('menu-bar');
-        const mainUl = document.querySelector('.main-header .main-nav .main-ul');
-        const navLink = mainUl.querySelectorAll('li a');
-      
-        // Function to close the menu
-        function closeMenu() {
-          mainUl.style.display = 'none'; // Hide the main-ul
-          menuInput.checked = false;     // Uncheck the .menu input
-        }
-      
-        // Function to handle the menu behavior for larger screens
-        function handleLargeScreens() {
-          if (window.innerWidth >= 750) {
-            mainUl.style.display = 'flex';  // Show the main-ul
-          } else {
-            mainUl.style.display = menuInput.checked ? 'block' : 'none'; // Show if checked, hide if not
-          }
-        }
-      
-        // Initially handle the menu behavior for larger screens
-        handleLargeScreens();
-      
-        // Add event listeners to the navigation links to close the menu
-        navLink.forEach(link => {
-          link.addEventListener('click', () => {
-            if (window.innerWidth < 750) {
-              closeMenu();
-            }
-          });
-        });
-      
-        // Add an event listener to the .menu input for toggling visibility
-        menuInput.addEventListener('change', () => {
-          handleLargeScreens();
-        });
-      
-        // Add an event listener to the window resize event for larger screens
-        window.addEventListener('resize', handleLargeScreens);
-      </script>
+
 
  
     <!-- header ends -->
@@ -485,6 +446,46 @@ contactForm.addEventListener("submit", e => {
     });
 });
 
-    </script>
+
+        //for nav bar clicking of and on
+        const menuInput = document.getElementById('menu-bar');
+        const mainUl = document.querySelector('.main-header .main-nav .main-ul');
+        const navLink = mainUl.querySelectorAll('li a');
+      
+        // Function to close the menu
+        function closeMenu() {
+          mainUl.style.display = 'none'; // Hide the main-ul
+          menuInput.checked = false;     // Uncheck the .menu input
+        }
+      
+        // Function to handle the menu behavior for larger screens
+        function handleLargeScreens() {
+          if (window.innerWidth >= 750) {
+            mainUl.style.display = 'flex';  // Show the main-ul
+          } else {
+            mainUl.style.display = menuInput.checked ? 'block' : 'none'; // Show if checked, hide if not
+          }
+        }
+      
+        // Initially handle the menu behavior for larger screens
+        handleLargeScreens();
+      
+        // Add event listeners to the navigation links to close the menu
+        navLink.forEach(link => {
+          link.addEventListener('click', () => {
+            if (window.innerWidth < 750) {
+              closeMenu();
+            }
+          });
+        });
+      
+        // Add an event listener to the .menu input for toggling visibility
+        menuInput.addEventListener('change', () => {
+          handleLargeScreens();
+        });
+      
+        // Add an event listener to the window resize event for larger screens
+        window.addEventListener('resize', handleLargeScreens);
+      </script>
 </body>
 </html>
