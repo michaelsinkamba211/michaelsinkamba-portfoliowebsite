@@ -8,8 +8,15 @@
     <script src="https://kit.fontawesome.com/018d9ba538.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap">
+
+
+
+
     <script src="script.js"></script>
     <meta name="msvalidate.01" content="5CC90E0AFEAC7D9AE53D230F6BFC4D3F" />
 </head>
@@ -46,6 +53,34 @@
         </nav>
         
     </header>
+
+    <script>
+     const menuInput = document.getElementById('menu-bar');
+  const mainUl = document.querySelector('.main-header .main-nav .main-ul');
+  const navLink = mainUl.querySelectorAll('li a');
+
+  // Add event listeners to the navigation links
+  navLink.forEach(link => {
+    link.addEventListener('click', () => {
+      // Hide the main-ul
+      mainUl.style.display = 'none';
+      
+      // Uncheck the .menu input
+      menuInput.checked = false;
+    });
+  });
+
+  // Add an event listener to the .menu input for toggling visibility
+  menuInput.addEventListener('change', () => {
+    if (menuInput.checked) {
+      mainUl.style.display = 'block'; // Show the main-ul
+    } else {
+      mainUl.style.display = 'none';  // Hide the main-ul
+    }
+  });
+    </script>
+
+ 
     <!-- header ends -->
 
     <!-- home starts  -->
