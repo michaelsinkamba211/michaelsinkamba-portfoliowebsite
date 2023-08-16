@@ -255,7 +255,8 @@ footer{
 }
 
 .main-header .main-nav .main-ul li a:hover{
-    color: var(--hover);
+/*     color: var(--hover); */
+    color: #2929b5;
 }
 
 /* basic universal styles */
@@ -355,7 +356,7 @@ footer{
     justify-content: center;
     align-items: center;
     margin: 0 auto;
-    color: blue;
+    color: #2929b5;
     width: 100%;
 }
 .home-personal-content .home-links a{
