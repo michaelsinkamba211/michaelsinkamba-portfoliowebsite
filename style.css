@@ -315,7 +315,7 @@ footer{
 .home-personal-content h1{
     font-size: var(--medium-font);
     margin-bottom: 10px;
-    color: red;
+    color: var(--orther-color);
 }
 
 .home-personal-content h2{
