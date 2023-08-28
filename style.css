@@ -156,9 +156,9 @@ body{
     display: flex; 
 }
 
-.main-ul li a.active {
+/* .main-ul li a.active {
     background-color: #bbbbbb4d;
-}
+} */
 
 .cv_for_mobile,
 .hire-me {
@@ -221,11 +221,10 @@ body{
         display: block;
     }
 
-    .main-ul li a.active {
-        background-color: transparent;
-    }
 
 }
+
+
 
 
 /* links in the nav */
@@ -237,10 +236,8 @@ body{
     color: #717171;
 }
 
-
-
 .main-ul li a.active {
-    border-bottom: 1px var(--main-color) solid;
+    /* border-bottom: 1px var(--main-color) solid; */
     border-width: 2px;
 }
 
@@ -747,7 +744,6 @@ body{
     justify-content: space-around;
     align-items: center;
     margin: 20px 30px;
-
     width: 220px;
     height: 150px;
     border-bottom: 2px solid #bbb;
@@ -1140,7 +1136,6 @@ footer .logo .ceo{
 }
 
 
-/* section{
-    width: 100%;
-} */
-
+ul li a.active {
+    background-color: rgb(54, 120, 201);
+}
