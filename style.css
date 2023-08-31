@@ -154,6 +154,7 @@ body{
 /* this will be responsive */
 .main-header .main-nav .main-ul{
     display: flex; 
+    align-items: center;
 }
 
 /* .main-ul li a.active {
