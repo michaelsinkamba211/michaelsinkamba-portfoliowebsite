@@ -1120,6 +1120,12 @@ body{
     color: #fff;
 }
 
+input:focus,
+textarea:focus{
+    outline: 2px solid  #033a80;
+    border-radius: 12px;
+}
+
 
 
 .tittle h1 p{
