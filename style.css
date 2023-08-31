@@ -755,10 +755,10 @@ body{
 .services .sub-coding .app-development{
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     margin: 20px 30px;
-    width: 300px;
+    width: 260px;
     height: 170px;
     border-bottom: 2px solid #bbb;
     border-top-width: 0;
@@ -768,6 +768,12 @@ body{
     box-shadow: 1px 2px 5px 0px rgba(0,0,0,0.75);
 }
 
+
+.services .sub-coding p{
+    text-align: center;
+}
+
+
 /* orther services styles */
 
 
@@ -775,17 +781,24 @@ body{
 .services a{
     display: block;
     color: var(--main-color);
-    padding: 5px 20px;
     border-radius: 12px;
+    background-color: #b9b9b9c4;
 }
+
 
 .services .sub-coding a{
     display: block;
-    padding: 0;
-    width: 120px;
+    width: 125px;
     color: #2929b5;
     text-align: center;
 }
+
+
+.services a:hover{
+    background-color: var(--main-color);
+    color: #fff;
+}
+
 
 .services .fa-brands,
 .services .fa-solid{
@@ -866,8 +879,8 @@ body{
     justify-content: space-around;
     align-items: center;
     margin: 20px 30px;
-    width: 220px;
-    height: 150px;
+    width: 250px;
+    height: 170px;
     border-bottom: 2px solid #bbb;
     border-top-width: 0;
     padding:15px 0;
@@ -970,15 +983,15 @@ body{
 .second-coding-work .frontend-development,
 .first-coding-work .frontend-development,
 .third-coding-work .frontend-development{
-    width: 220px;
-    height: 150px;
+    width: 260px;
+    height: 160px;
     border-bottom: 2px solid #bbb;
     border-top-width: 0;
     padding:15px 0;
     border-radius: 12px;
     color: #717171;
+    background-color: red;
     box-shadow: 1px 2px 5px 0px rgba(0,0,0,0.75);
-    
 }
 
 /* orther styles  */
