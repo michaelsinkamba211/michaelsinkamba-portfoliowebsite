@@ -527,8 +527,6 @@ body{
 
 .about .about-me .personal-info .info{
     grid-area: info;
-
-    
 }
 
 .about .about-me .personal-info .cv{
@@ -552,6 +550,14 @@ body{
     padding: 0;
     background-color: transparent;
     color: black;
+}
+
+.personal-info .cv a{
+    width: 120px;
+    height: 33px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 
