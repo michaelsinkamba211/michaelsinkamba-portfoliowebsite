@@ -560,6 +560,7 @@ body{
 .about p{
     font-size: var(--p-font);
     color: #717171;
+    text-indent: 15px;
 }
 
 
