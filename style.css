@@ -706,6 +706,8 @@ body{
     'coding'
     'phone-repair'
     ;
+    background-color: red;
+
 }
 
 .services .tittle{
@@ -757,7 +759,7 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 20px 30px;
+    margin: 20px 20px;
     width: 260px;
     height: 170px;
     border-bottom: 2px solid #bbb;
@@ -879,7 +881,7 @@ body{
     justify-content: space-around;
     align-items: center;
     margin: 20px 30px;
-    width: 250px;
+    width: 240px;
     height: 170px;
     border-bottom: 2px solid #bbb;
     border-top-width: 0;
@@ -983,7 +985,7 @@ body{
 .second-coding-work .frontend-development,
 .first-coding-work .frontend-development,
 .third-coding-work .frontend-development{
-    width: 260px;
+    width: 240px;
     height: 160px;
     border-bottom: 2px solid #bbb;
     border-top-width: 0;
