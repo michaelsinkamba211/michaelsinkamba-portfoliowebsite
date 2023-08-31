@@ -484,11 +484,11 @@ body{
 
 
 .about .about-me .personal-info{
-    order: 1;
+    order: 2;
 }
 
 .about .about-me .introduction{
-    order: 2;
+    order: 1;
 }
 
 .about .about-me .skills{
