@@ -479,8 +479,10 @@ body{
 .about .about-me .personal-info,
 .about .about-me .introduction,
 .about .about-me .skills{
-    width: 300px;
-    margin: 15px 20px;
+/*     width: 300px;
+    margin: 15px 20px; */
+    width: 350px;
+    margin: 15px 35px;
 }
 
 
