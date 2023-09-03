@@ -449,6 +449,18 @@
                 console.log(error);
                 // change button  text for error
                 submitBtn.innerText = "Something went wrong";
+
+                 // addingclearn inputs after error
+                 // let clear all inputs 
+                nameInput.value = "";
+                emailInput.value = "";
+                messageInput.value = "";
+
+                setTimeout(() => {
+                    submitBtn.innerText = "Send Again";
+                }, 2000);
+
+                // ends here
             });
         });
 
