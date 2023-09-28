@@ -470,18 +470,18 @@ body{
 }
 
 .about .about-me{
-    display: flex;
-    flex-wrap: wrap;
-    width: 95%;
+    display: grid;
+    gap: 0px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     margin: 0 auto;
-    justify-content: center;
 }
+
+/* using grid for .about-me */
 
 
 .about .about-me .personal-info,
 .about .about-me .introduction,
 .about .about-me .skills{
-    width: 300px;
     margin: 15px 20px;
 }
 
@@ -753,11 +753,9 @@ body{
 
 /* sub coding flex starts */
 .services .coding .sub-coding{
-    width: 95%;
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
 .services .sub-coding .frontend-development,
@@ -767,9 +765,7 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 20px 15px;
-    width: 260px;
-    height: 170px;
+    margin: 20px 20px;
     border-bottom: 2px solid #bbb;
     border-top-width: 0;
     padding:15px 0;
@@ -871,11 +867,9 @@ body{
 
 /* sub coding flex starts */
 .services .phone-repair .sub-repair{
-    width: 95%;
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 } 
 
 
@@ -888,9 +882,7 @@ body{
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    margin: 20px 30px;
-    width: 240px;
-    height: 170px;
+    margin: 20px 20px;
     border-bottom: 2px solid #bbb;
     border-top-width: 0;
     padding:15px 0;
@@ -953,6 +945,7 @@ body{
 }
 
 .works .coding {
+
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: minmax(50px, auto);
@@ -972,11 +965,10 @@ body{
 }
 /* sub coding flex starts */
 .works .coding .sub-coding{
-    width: 95%;
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+    margin: 0 15px;
 }
 
 .second-coding-work,
@@ -986,22 +978,24 @@ body{
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    margin: 20px 30px;
     line-height: 40px;
+    margin: 0 auto;
+
 }
 
 .second-coding-work .frontend-development,
 .first-coding-work .frontend-development,
 .third-coding-work .frontend-development{
-    width: 240px;
-    height: 160px;
+    width: 290px;
+    height: 200px;
     border-bottom: 2px solid #bbb;
     border-top-width: 0;
     padding:15px 0;
+    margin: 0 auto;
     border-radius: 12px;
     color: #717171;
-    background-color: red;
     box-shadow: 1px 2px 5px 0px rgba(0,0,0,0.75);
+    background-color: red;
 }
 
 /* orther styles  */
@@ -1061,9 +1055,9 @@ body{
     grid-template-columns: repeat(1, 1fr);
     grid-auto-rows:minmax(80px, auto);
     grid-template-areas: 
-    
     'tittle'
     'form';
+    
 }
 
 .contact .tittle{
@@ -1080,8 +1074,9 @@ body{
     display: flex;
     justify-content: center;
     flex-direction: column;
-    width: 80%;
-    margin: 0 auto;
+    /* width: 90%; */
+    margin: 0 20px;
+    /* margin: 0 auto; */
 }
 
 
