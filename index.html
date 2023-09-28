@@ -349,28 +349,33 @@
             </div>
         
             <div class="form">
-                <form  id="contact-form">
+                <form id="contact-form" onsubmit="return validateForm()">
                     <input type="text" id="user_name" name="name" class="name" placeholder="Your Name" required>
-
                     <input type="email" id="user_email" name="email" class="email" placeholder="Your Email" required>
-
-                    <textarea style="resize: none;" id="message" name="message" class="message" cols="30" rows="10" required>Hello Micheal, I want.
-                    </textarea>
-
-                    <button class="submit-btn" type="submit">
-                        Send
-                    </button>
-
+                    <textarea style="resize: none;" id="message" name="message" class="message" cols="30" rows="10" required>Hello Michael, I want.</textarea>
+                    <button class="submit-btn" type="submit">Send</button>
                 </form>
-
             </div>
-                
-        </div>
-
-
-        
+            
+            <script>
+                function validateForm() {
+                    var name = document.getElementById("user_name").value;
+                    var email = document.getElementById("user_email").value;
+            
+                    if (name === "" || email === "") {
+                        alert("Name and email are required fields.");
+                        return false;
+                    }
+            
+                    return true;
+                }
+            </script>
+            
 
             
+                
+        </div>
+    
 
         </section>
 
