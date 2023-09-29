@@ -1068,15 +1068,38 @@ body{
 
 .contact .form{
     grid-area: form;
+    display: grid;
+    margin: 0 20px;
+    grid-template-columns: repeat(1, .5fr 1fr);
+    grid-template-rows: minmax(300px, auto);
+}
+
+
+
+.contact .image-icon{
+    margin: 0 20px;
+    background: url(./images/icon-image.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 135%;
+}
+
+@media screen and (max-width:850px) {
+    .contact .form{
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: minmax(300px, auto);
+    }
+
+    .contact .image-icon{
+        background-size: 60%;
+    }
 }
 
 .contact .form form{
     display: flex;
     justify-content: center;
     flex-direction: column;
-    /* width: 90%; */
     margin: 0 20px;
-    /* margin: 0 auto; */
 }
 
 
@@ -1099,6 +1122,7 @@ body{
     margin-bottom: 20px;
     padding: 5px 20px;
     font-size: var(--p-font);
+    border-radius: 12px;
 }
 
 .contact .form .message{
@@ -1107,6 +1131,7 @@ body{
     padding: 5px 20px;
     border-width: 0;
     background-color: #bbbbbb84;
+    border-radius: 12px;
 }
 .contact .form button{
     width: fit-content;
