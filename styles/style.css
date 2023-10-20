@@ -42,6 +42,7 @@ header {
   width: 100%;
   min-width: 180px;
   background-color: var(--top-bg);
+  
 }
 
 /* for dark mode
@@ -612,10 +613,13 @@ section {
   color: white;
 }
 
+
+
 .about .skills h2 {
   margin-bottom: 20px;
   font-size: var(--sub-font);
   color: var(--main-color);
+  text-align: center;
 }
 
 .about .skills .fa-html5 {
@@ -627,67 +631,47 @@ section {
 }
 
 .about .skills .fa-square-js {
-  color: yellow;
+  color: #f4f41adb;
 }
 
 .about .skills .fa-react {
   color: lightblue;
 }
 
-.about .skills .fa-java {
-  color: red;
+.about .skills .fa-bootstrap {
+  color: #033a80;
 }
 
-.about .skills .fa-brands {
-  display: block;
-  font-size: 1.7rem;
-  margin-right: 20px;
+.about .skills .fa-brands{
+  display: flex;
+  font-size: 2.2rem;
+  width: 100%;
+  justify-content: center;
+}
+
+.about .languages{
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .bar-holder {
-  display: flex;
-  width: 100%;
-  height: 15px;
-  align-items: center;
+  
+  display: grid;
+  gap: 5px;
+  grid-template-columns: repeat(auto-fit, minmax(98px, 1fr));
   margin-bottom: 20px;
 }
 
-/* bars  */
+.bar-holder  i{
+  padding-left: 10px;
+}
 
-.bar-1,
-.bar-2,
-.bar-3,
-.bar-4,
-.bar-5 {
-  height: 100%;
-  color: #fff;
-  border-radius: 20px;
+.bar-holder p{
   text-align: center;
-  line-height: 15px;
-  font-weight: 400;
-  background-color: var(--main-color);
-  font-size: 0.7rem;
 }
 
-.bar-1 {
-  width: 90%;
-}
 
-.bar-2 {
-  width: 90%;
-}
 
-.bar-3 {
-  width: 30%;
-}
-
-.bar-4 {
-  width: 10%;
-}
-
-.bar-5 {
-  width: 50%;
-}
 
 /* services section begins  */
 
@@ -704,6 +688,11 @@ section {
 .services .tittle {
   grid-area: tittle;
   text-align: center;
+
+}
+
+.services h1{
+  height: 65px;
 }
 
 .services .tittle h1 p {
@@ -814,6 +803,7 @@ section {
 .services .phone-repair {
   grid-area: phone-repair;
 }
+
 
 .services .phone-repair {
   display: grid;
@@ -958,7 +948,7 @@ section {
 .first-coding-work .frontend-development,
 .third-coding-work .frontend-development {
   width: 300px;
-  height: 200px;
+  height: 160px;
   border-bottom: 2px solid #bbb;
   border-top-width: 0;
   padding: 15px 0;
@@ -1311,3 +1301,12 @@ header background-color: rgb(20, 29, 38);
 body: background-color: rgba(0, 0, 0, 0.733);
 text for header: rgb(195, 195, 195);
 */
+
+.about h1,
+.services h1,
+.works h1,
+.contact h1{
+  border-bottom: .5px solid #bbbbbb32;
+}
+
+
