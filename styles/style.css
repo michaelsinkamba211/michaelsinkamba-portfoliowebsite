@@ -29,6 +29,11 @@
   --logo-font: 1rem;
 }
 
+html,
+body{
+  scroll-behavior: smooth;
+}
+
 /* header styling starts here */
 header {
   position: fixed;
@@ -87,6 +92,21 @@ header .tittle {
   display: none;
 }
 
+.link-container ul li a {
+  display: block;
+  padding: 10px 0px;
+  text-transform: uppercase;
+  font: normal normal bold 16px/18px Ubuntu;
+  color: #717171;
+  /* color: red; */
+}
+
+
+.link-container ul li a:hover{
+  cursor: pointer;
+  color: #033a80;
+}
+
 header input:checked ~ .link-container {
   display: flex;
   width: 100%;
@@ -103,6 +123,8 @@ header input:checked ~ .link-container {
 header nav {
   display: flex;
 }
+
+
 
 header input {
   display: none;
@@ -465,9 +487,10 @@ section {
 
 .about .about-me {
   display: grid;
-  gap: 0px;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   margin: 0 auto;
+  
 }
 
 /* using grid for .about-me */
@@ -476,6 +499,7 @@ section {
 .about .about-me .introduction,
 .about .about-me .skills {
   margin: 15px 5px;
+  background-color: rebeccapurple;
 }
 
 .about .about-me .personal-info {
@@ -512,6 +536,7 @@ section {
     "tittle"
     "info"
     "cv";
+    
 }
 
 .about .about-me .personal-info .tittle {
@@ -1181,7 +1206,6 @@ ul li a.active {
 body {
   transition: all 0.3s linear;
 }
-
 .dark-mode{
   display: none;
 }
@@ -1243,6 +1267,8 @@ label:active:after {
   width: 100vw;
   transition: 0.3s;
 }
+
+
 
 
 .dark-mode input:checked + label + .backround {
