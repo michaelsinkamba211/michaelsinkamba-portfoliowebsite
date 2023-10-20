@@ -1139,6 +1139,14 @@ textarea:focus {
 
 /* footer starts here */
 
+.footer-container {
+  width: 100%;
+  min-width: 180px;
+  background-color: var(--top-bg);
+  background-color: #bbb;
+  height: 100px;
+}
+
 footer {
   max-width: 960px;
   margin: 0 auto;
@@ -1147,7 +1155,7 @@ footer {
   justify-content: space-between;
   align-items: center;
   height: 100px;
-  background-color: #bbb;
+
   margin-top: 50px;
   padding: 0 20px;
   width: 100%;
