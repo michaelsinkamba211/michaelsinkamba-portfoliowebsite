@@ -488,8 +488,9 @@ section {
 .about .about-me {
   display: grid;
   gap: 10px;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   margin: 0 auto;
+  /* background-color: red; */
   
 }
 
@@ -528,29 +529,11 @@ section {
 }
 
 .about .about-me .personal-info {
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  grid-auto-rows: minmax(50px, auto);
-  grid-template-areas:
-    "tittle"
-    "info"
-    "cv";
-    
+    display: flex;
+    flex-direction: column;   
 }
 
-.about .about-me .personal-info .tittle {
-  grid-area: tittle;
-  text-align: left;
-}
 
-.about .about-me .personal-info .info {
-  grid-area: info;
-}
-
-.about .about-me .personal-info .cv {
-  width: 200px;
-  grid-area: cv;
-}
 
 .about .about-me .personal-info li {
   text-decoration: none;
