@@ -77,7 +77,7 @@ header .tittle {
   display: flex;
   justify-content: space-between;
   width: 100%;
-  padding: 0 5px;
+  padding: 0 8px;
   line-height: 50px;
 }
 
@@ -100,13 +100,25 @@ header .tittle {
   font: normal normal bold 16px/18px Ubuntu;
   color: #717171;
   /* color: red; */
+
 }
 
 
-.link-container ul li a:hover{
+/* .link-container ul li a:hover{
   cursor: pointer;
   color: #033a80;
-}
+} */
+
+/* .link-container ul li:hover{
+  cursor: pointer;
+  color: var(--hover);
+  border-bottom: 2px solid hsl(260, 100%, 51%);
+} */
+
+
+
+
+
 
 header input:checked ~ .link-container {
   display: flex;
@@ -181,6 +193,16 @@ header .download {
   width: 120%;
   justify-content: space-around;
   margin-top: 20px;
+  
+}
+
+header .download a {
+  background-color: var(--main-color);
+  padding: 10px 0;
+  width: 100px;
+  text-align: center;
+  border-radius: 12px;
+  color: #fff;
 }
 
 @media all and (min-width: 330px) {
@@ -195,14 +217,8 @@ header .download {
   }
 }
 
-header .download a {
-  background-color: var(--main-color);
-  padding: 10px 0;
-  width: 100px;
-  text-align: center;
-  border-radius: 12px;
-  color: #fff;
-}
+
+
 
 ul a {
   border-bottom: 2px solid transparent;
@@ -470,7 +486,6 @@ section {
 
 .about .tittle {
   grid-column: 1/ 2;
-  text-align: center;
 }
 
 .about h1 {
@@ -490,9 +505,7 @@ section {
   display: grid;
   gap: 10px;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  margin: 0 auto;
-  /* background-color: red; */
-  
+  margin: 0 auto; 
 }
 
 /* using grid for .about-me */
@@ -531,7 +544,7 @@ section {
 
 .about .about-me .personal-info {
     display: flex;
-    flex-direction: column;   
+    flex-direction: column;
 }
 
 
@@ -565,20 +578,21 @@ section {
 .about p {
   font-size: var(--p-font);
   color: #717171;
-  text-indent: 15px;
 }
 
 .about .personal-info h2,
-.about .introduction h2 {
+.about .introduction h2,
+.about .skills h2 {
   margin-bottom: 20px;
-  color: #033a80;
+  color: var(--main-color);
   font-size: var(--sub-font);
 }
+
 
 .about .personal-info ul .fa-solid,
 .fa-regular {
   display: inline-block;
-  padding-right: 20px;
+  padding-right: 10px;
   padding-bottom: 25px;
 }
 
@@ -614,14 +628,6 @@ section {
 }
 
 
-
-.about .skills h2 {
-  margin-bottom: 20px;
-  font-size: var(--sub-font);
-  color: var(--main-color);
-  text-align: center;
-}
-
 .about .skills .fa-html5 {
   color: orange;
 }
@@ -646,7 +652,6 @@ section {
   display: flex;
   font-size: 2.2rem;
   width: 100%;
-  justify-content: center;
 }
 
 .about .languages{
@@ -655,22 +660,11 @@ section {
 }
 
 .bar-holder {
-  
   display: grid;
   gap: 5px;
   grid-template-columns: repeat(auto-fit, minmax(98px, 1fr));
   margin-bottom: 20px;
 }
-
-.bar-holder  i{
-  padding-left: 10px;
-}
-
-.bar-holder p{
-  text-align: center;
-}
-
-
 
 
 /* services section begins  */
@@ -687,8 +681,6 @@ section {
 
 .services .tittle {
   grid-area: tittle;
-  text-align: center;
-
 }
 
 .services h1{
@@ -742,6 +734,7 @@ section {
   border-radius: 12px;
   color: #717171;
   box-shadow: 1px 2px 5px 0px rgba(0, 0, 0, 0.75);
+  
 }
 
 .services .sub-coding p {
@@ -837,7 +830,7 @@ section {
 .services .sub-repair .orther-services {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   margin: 20px 3px;
   border-bottom: 2px solid #bbb;
@@ -846,10 +839,6 @@ section {
   border-radius: 12px;
   color: #717171;
   box-shadow: 1px 2px 5px 0px rgba(0, 0, 0, 0.75);
-}
-
-.services .sub-repair ul {
-  align-self: flex-start;
 }
 
 .sub-tittle p {
@@ -1284,7 +1273,6 @@ input:checked + label svg.moon {
 
 
 header{
-  /* background-color: rgb(20, 29, 38); */
   z-index: 1;
 }
 
@@ -1294,19 +1282,10 @@ header ul li a{
 
 
 
-/* for dark mode
-
-text color: rgb(180, 129, 63);
-header background-color: rgb(20, 29, 38);
-body: background-color: rgba(0, 0, 0, 0.733);
-text for header: rgb(195, 195, 195);
-*/
-
 .about h1,
 .services h1,
 .works h1,
 .contact h1{
-  border-bottom: .5px solid #bbbbbb32;
+  border-bottom: 1px solid #bbbbbb53;
+  text-align: left;
 }
-
-
