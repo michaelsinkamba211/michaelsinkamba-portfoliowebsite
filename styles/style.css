@@ -198,6 +198,8 @@ header .download {
 
 header .download a {
   background-color: var(--main-color);
+  background-color: #033a80;
+  
   padding: 10px 0;
   width: 100px;
   text-align: center;
@@ -565,15 +567,27 @@ section {
   padding: 0;
   background-color: transparent;
   color: black;
+  
 }
+
+.personal-info .cv{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100px;
+}
+
+
 
 .personal-info .cv a {
   width: 120px;
   height: 33px;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content:center;
 }
+
+
 
 .about p {
   font-size: var(--p-font);
@@ -614,7 +628,7 @@ section {
 
 .about a {
   display: block;
-  text-align: center;
+  /* text-align: center; */
   padding: 10px 0;
   border-radius: 40em;
   margin: 5px auto;
@@ -1289,3 +1303,4 @@ header ul li a{
   border-bottom: 1px solid #bbbbbb53;
   text-align: left;
 }
+
