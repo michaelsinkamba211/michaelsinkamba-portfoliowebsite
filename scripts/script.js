@@ -8,6 +8,7 @@ function rotateLabel() {
 
 // scrolling effect
 
+
 const links = document.querySelectorAll('ul a');
 const sections = document.querySelectorAll('section');
 const headerHeight = 120; // Adjust this value according to your header height
@@ -19,20 +20,31 @@ window.addEventListener('scroll', () => {
         const sectionTop = section.offsetTop;
         const sectionBottom = sectionTop + section.offsetHeight;
 
-        // Adjust the range to consider the header height
-        // if (scrollPosition >= sectionTop && scrollPosition < sectionBottom) {
-        //     links.forEach(link => link.style.borderBottom = '2px solid transparent');
-        //     links[index].style.borderBottom = '2px solid blue';
-        // }
-
-        if (scrollPosition >= sectionTop && scrollPosition < sectionBottom) {
-            links.forEach(link => {
+       if (scrollPosition >= sectionTop && scrollPosition < sectionBottom) {
+            links.forEach((link, i) => {
                 link.style.borderBottom = '2px solid transparent';
                 link.style.backgroundColor = 'transparent'; // Reset background color
+        
+                link.addEventListener('mouseover', () => {
+                    // Remove the border-bottom from the currently highlighted section
+                    links[index].style.borderBottom = '2px solid transparent';
+                    links[index].style.backgroundColor = 'transparent';
+        
+                    // Add the border-bottom to the section you're hovering over
+                    link.style.borderBottom = '2px solid hsl(260, 100%, 51%)';
+                    link.style.backgroundColor = '#insert';
+                    
+                    // Update the index to the one you're hovering over
+                    index = i;
+                });
             });
-            links[index].style.borderBottom = '2px solid blue';
-            links[index].style.backgroundColor = '#insert'; // Set the background color
+        
+            links[index].style.borderBottom = '2px solid hsl(260, 100%, 51%)';
+            links[index].style.backgroundColor = '#insert'; // Set the background color for the initial section
         }
+  
+
+        
     });
 });
 
