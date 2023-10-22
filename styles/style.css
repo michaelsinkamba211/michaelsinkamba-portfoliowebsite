@@ -110,6 +110,7 @@ header input:checked ~ .link-container {
   width: 100%;
   justify-content: center;
   background-color: var(--top-bg);
+  height: 100dvh;
 }
 
 @media all and (min-width: 650px) {
