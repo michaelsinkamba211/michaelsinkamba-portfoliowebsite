@@ -5,9 +5,7 @@ function rotateLabel() {
     label.classList.toggle('active');
 }
 
-
-// scrolling effect
-
+// scrolling effects
 
 const links = document.querySelectorAll('ul a');
 const sections = document.querySelectorAll('section');
@@ -47,8 +45,6 @@ window.addEventListener('scroll', () => {
         
     });
 });
-
-
 
 
 // scrolling to the respective section 
@@ -194,8 +190,6 @@ contactForm.addEventListener("submit", e => {
         // ends here
     });
 });
-
-
 
 // validation
 
