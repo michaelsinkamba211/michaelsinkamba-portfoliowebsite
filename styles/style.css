@@ -104,21 +104,6 @@ header .tittle {
 }
 
 
-/* .link-container ul li a:hover{
-  cursor: pointer;
-  color: #033a80;
-} */
-
-/* .link-container ul li:hover{
-  cursor: pointer;
-  color: var(--hover);
-  border-bottom: 2px solid hsl(260, 100%, 51%);
-} */
-
-
-
-
-
 
 header input:checked ~ .link-container {
   display: flex;
@@ -281,7 +266,7 @@ header nav ul li a {
     display: none;
   }
 
-  header .download {
+  .link-container .download {
     display: none;
   }
 }
@@ -289,8 +274,6 @@ header nav ul li a {
 /* done for the header */
 
 section {
-  /* height: calc(100dvh + 50px); */
-
   width: 100%;
   max-width: 960px;
   margin: 50px auto;
@@ -1302,5 +1285,4 @@ header ul li a{
   border-bottom: 1px solid #bbbbbb53;
   text-align: left;
 }
-
 
