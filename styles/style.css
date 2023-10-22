@@ -196,16 +196,15 @@ header .download {
   
 }
 
-header .download a {
+header .download .cvs {
   background-color: var(--main-color);
-  background-color: #033a80;
-  
   padding: 10px 0;
   width: 100px;
   text-align: center;
   border-radius: 12px;
   color: #fff;
 }
+
 
 @media all and (min-width: 330px) {
   header .download {
@@ -1303,4 +1302,5 @@ header ul li a{
   border-bottom: 1px solid #bbbbbb53;
   text-align: left;
 }
+
 
