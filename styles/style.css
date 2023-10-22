@@ -66,6 +66,7 @@ header .main-header-container {
   display: flex;
   align-items: center;
   flex-direction: column;
+  
 }
 
 header .tittle {
@@ -97,27 +98,28 @@ header .tittle {
   display: block;
   padding: 10px 0px;
   text-transform: uppercase;
-  font: normal normal bold 16px/18px Ubuntu;
   color: #717171;
-  /* color: red; */
-
 }
-
-
 
 header input:checked ~ .link-container {
   display: flex;
   width: 100%;
   justify-content: center;
   background-color: var(--top-bg);
-  height: 100dvh;
 }
 
+
+
+
 @media all and (min-width: 650px) {
+  
+
   header input:checked ~ .link-container {
     justify-content: right;
   }
 }
+
+
 
 header nav {
   display: flex;
@@ -174,40 +176,24 @@ header input {
   top: 0;
 }
 
-.link-container .download {
-  display: flex;
-  width: 120%;
-  justify-content: space-evenly;
-  margin-top: 20px;
-  
-}
 
-.link-container .download .cvs {
-  background-color: var(--main-color);
-  padding: 10px 0;
-  width: 100px;
-  text-align: center;
-  border-radius: 12px;
-  color: #fff;
-}
 
 
 @media all and (min-width: 330px) {
-  header .download {
+  header .downloads {
     width: 100%;
   }
 }
 
 @media all and (min-width: 500px) {
-  header .download {
+  header .downloads {
     width: 100%;
   }
 }
 
 
 
-
-ul a {
+header ul a {
   border-bottom: 2px solid transparent;
   transition: border-bottom 0.8s ease;
 }
@@ -235,6 +221,27 @@ header nav ul li a {
   letter-spacing: 0.7px;
   font-family: "Prompt", sans-serif;
   color: #717171;
+}
+
+
+.link-container .downloads {
+  display: flex;
+  width: 120%;
+  justify-content: space-evenly;
+  margin-top: 20px;
+}
+
+.link-container .downloads span{
+  display: block;
+  background-color: var(--main-color);
+  padding: 10px 0;
+  width: 100px;
+  text-align: center;
+  border-radius: 12px;
+}
+
+.link-container .downloads span a{
+  color: #fff;
 }
 
 /* media queries for the header */
@@ -267,7 +274,7 @@ header nav ul li a {
     display: none;
   }
 
-  .link-container .download {
+  .link-container .downloads {
     display: none;
   }
 }
@@ -1286,4 +1293,3 @@ header ul li a{
   border-bottom: 1px solid #bbbbbb53;
   text-align: left;
 }
-
