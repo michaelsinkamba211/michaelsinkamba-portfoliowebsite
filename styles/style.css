@@ -1049,6 +1049,7 @@ section {
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: minmax(300px, auto);
   }
+  
 
   .contact .image-icon {
     background-size: 60%;
@@ -1090,6 +1091,7 @@ section {
   border-width: 0;
   background-color: #bbbbbb84;
   border-radius: 12px;
+  width: 100%;
 }
 .contact .form button {
   width: fit-content;
@@ -1241,7 +1243,6 @@ label:active:after {
   width: 100vw;
   transition: 0.3s;
 }
-
 
 
 

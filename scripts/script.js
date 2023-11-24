@@ -70,8 +70,8 @@ document.querySelectorAll('ul a').forEach(link => {
 
 
 //for nav bar clicking of and on
-const menuInput = document.getElementById('menu-bar');
-const mainUl = document.querySelector('.link-container');
+const menuInput = document.getElementById('menu-bar'); //input
+const mainUl = document.querySelector('.link-container'); //nav holder
 const navLink = mainUl.querySelectorAll('li a');
 
 // Function to close the menu
