@@ -1033,7 +1033,7 @@ section {
   display: grid;
   margin: 0px;
   grid-template-columns: repeat(1, 0.5fr 1fr);
-  grid-template-rows: minmax(300px, auto);
+  grid-template-rows: minmax(290px, auto);
 }
 
 .contact .image-icon {
@@ -1047,7 +1047,7 @@ section {
 @media screen and (max-width: 850px) {
   .contact .form {
     grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: minmax(300px, auto);
+    grid-template-rows: minmax(290px, auto);
   }
 
   .contact .image-icon {
