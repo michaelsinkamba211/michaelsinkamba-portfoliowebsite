@@ -846,6 +846,10 @@ section {
   box-shadow: 1px 2px 5px 0px rgba(0, 0, 0, 0.75);
 }
 
+.services .sub-repair li{
+  margin: 2px;
+}
+
 .sub-tittle p {
   font-size: 1rem;
   color: #fb3958;
