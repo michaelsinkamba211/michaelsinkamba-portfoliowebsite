@@ -982,6 +982,13 @@ section {
   background-size: cover;
 }
 
+.works .coding .vam {
+  background: url(../images/vamengineers.PNG);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .works .coding .simple-life,
 .works .coding .portfolio,
 .works .coding .school {
