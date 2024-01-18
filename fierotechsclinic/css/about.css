@@ -1,0 +1,282 @@
+:root {
+  --body-bg: #033a80;
+  --text-color: #000000;
+  --secondary-text-color: rgba(0, 0, 0, 0.6);
+  --primary-color: #2f89fc;
+  --secondary-color: #0c75fb;
+  --sub-secondary-color: #61a6fd;
+  --text-font: 0.9rem;
+  --main-color: #ff8000;
+  --white-color: #fff;
+}
+
+.home_about {
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+  }
+  
+.home_about::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background-color: rgba(47, 137, 252, 0.8);
+  }
+  
+.home_about {
+  background-image: url("../images/background_images2.png");
+  background-repeat: no-repeat;
+  background-position:top center;
+  background-size: cover;
+}
+
+section .wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+  text-align: center;
+}
+
+.wrapper h1 {
+  font-size: 3rem;
+  font-weight: 900;
+  font-family: "Open Sans";
+  color: rgb(255, 255, 255);
+}
+
+.wrapper p {
+  color: rgb(255, 255, 255);
+  font-weight: 600;
+  font-family: "Open Sans";
+  text-transform: uppercase;
+  font-size: .8rem;
+}
+
+
+
+/* kontact section starts jere */
+
+.kontact {
+    margin-top: 70px;
+    margin:  50px auto;
+    padding: 0 5px;
+  }
+  
+  .kontact .sub_title {
+    position: relative;
+    text-align: center;
+    font-size: 0.9rem;
+    width: fit-content;
+    align-self: center;
+    color: #70707067;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .kontact .sub_title::before,
+  .kontact .sub_title::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 70%;
+    height: 1px;
+    background-color: #70707067;
+    margin: 0 -10px;
+  }
+  
+  .kontact .sub_title::before {
+    left: 0;
+    transform: translateX(-100%);
+  }
+  
+  .kontact .sub_title::after {
+    right: 0;
+    transform: translateX(100%);
+  }
+  
+  .kontact .ti {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 0 5px;
+  }
+  
+  .kontact .ti h1{
+    font-size: 1.5rem;
+  }
+  
+  .kontact_wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: minmax(80px, auto);
+    grid-template-areas: "numbers messages";
+    padding: 0 20px;
+    gap: 20px;
+    margin-top: 30px;
+  }
+
+
+  
+  @media screen and (min-width:816px){
+    .kontact_wrapper .google_map {
+      grid-area: google;
+    }
+  
+    
+  .kontact_wrapper {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: 
+    "numbers messages"
+    "google google";
+  } 
+  
+  }
+  
+  
+  @media screen and (max-width: 815px) {
+    .kontact_wrapper {
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-areas:
+        "numbers"
+        " messages";
+    }
+  }
+  
+  .kontact_wrapper .number {
+    grid-area: numbers;
+  }
+  
+  .kontact_wrapper .number {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-family: 'Open Sans';
+    font-weight: 600;
+  }
+  
+  .kontact_wrapper .number div {
+    background: rgba(204, 204, 204, 0.15);
+    padding: 10px;
+  }
+  
+  .kontact_wrapper .number div .name {
+    font-size: 1.1rem;
+    /* color: #000; */
+    font-weight: 300;
+  }
+  
+  .kontact_wrapper .fa-solid,
+  .kontact_wrapper .fa-regular {
+    color: var(--primary-color);
+    font-size: 1.2rem;
+  }
+  
+  .kontact_wrapper .number div .value {
+    margin: 10px 0;
+    margin-left: 20px;
+    font-size: .95rem;
+    color: rgba(0, 0, 0,.8);
+    font-weight: 500;
+  }
+
+  .kontact_wrapper .number div .web_link{
+    color: var(--secondary-color) !important;
+    display: block;
+  }
+
+
+
+  
+  
+  .kontact_wrapper .google_map iframe{
+    width: 100%;
+    height: 400px;
+  }
+  
+  .kontact_wrapper .google_map{
+    border: 1px solid var(--primary-color);
+    height: 400px;
+  }
+  
+  /* lets  do messages */
+  
+  .kontact_wrapper .messages {
+    grid-area: messages;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 20px;
+    background: rgba(204, 204, 204, 0.15);
+  }
+  
+  
+  
+  
+  .kontact .messages .name,
+  .kontact .messages .email {
+    height: 50px;
+    border-width: 0;
+    margin-bottom: 20px;
+    padding: 5px 20px;
+    font-size: var(--p-font);
+    z-index: 1;
+    width: 100%;
+  }
+  
+  .kontact .messages .message {
+    margin-bottom: 20px;
+    font-size: var(--p-font);
+    padding: 5px 20px;
+    border-width: 0;
+    width: 100%;
+    font-family: 'Open Sans';
+  }
+  
+  .kontact .messages button {
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    font-weight: 550;
+    background-color: var(--primary-color);
+    padding: 10px 15px;
+    height: 40px;
+    align-self: center;
+    border-width: 0;
+    /* border-radius: 12px; */
+  }
+  
+  .kontact .messages .form button:hover {
+    box-shadow: none;
+  }
+  
+  .kontact input:focus,
+  .kontact textarea:focus {
+    outline: 1px solid var(--primary-color);
+  }
+  
+  .kontact .tittle h1 p {
+    font-family: "Prompt", sans-serif;
+    font-family: "Gloria Hallelujah", cursive;
+    font-size: 1rem;
+  }
+  
+  .kontact form input,
+  .kontact textarea {
+    color: #000;
+  }
+  
+  .kontact textarea{
+    height: 180px;
+  }
+  
+
+

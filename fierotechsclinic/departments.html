@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctors Health Care Website By Fiero ( Micheal Sinkamba )</title>
+
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+    <!-- fonts icons start-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <script src="https://kit.fontawesome.com/018d9ba538.js" crossorigin="anonymous"></script>
+
+    <!-- fonts  end-->
+
+    <!-- font family -->
+    <!-- <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Helvetica+Neue:ital,wght@0,300;0,400;500;0,550;0,600;0,700;1,300;1,400;1,500;1,550;1,700;1,900&display=swap"> -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Open+Sans:400,450,500,520,550,600,700,900,1000">
+
+    <!-- styles start-->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/about.css">
+    <link rel="stylesheet" href="./css/animation.css">
+    <link rel="stylesheet" href="./css/fonts.css">
+    <!-- styles end -->
+    <!-- jQuery -->
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+</head>
+
+
+<body>
+    <!-- header -->
+
+    <header>
+        <div class="first_header">
+            <div class="essential_container">
+                <div class="logo">
+                    <h1 class="doc_logo">
+                        Dr.<span id="special">Fiero</span>
+                    </h1>
+                </div>
+
+                <div class="contacts">
+                    <div class="location">
+                        <div class="icon">
+                            <i class="fa-solid fa-map fa-beat-fade"></i>
+                        </div>
+                        <div class="address">
+                            <p class="address_one">Zambia Lusaka</p>
+
+                            <p class="address_two">Matero Street</p>
+                        </div>
+                    </div>
+
+                    <div class="email">
+                        <p class="icon">
+                            <span class="fa-solid fa-paper-plane fa-beat-fade"></span>
+                        </p>
+                        <p class="email">Email: michaelsinkamba211@email.com</p>
+                    </div>
+
+                    <div class="phone">
+                        <p class="icon">
+                            <i class="fa-solid fa-phone fa-beat-fade"></i>
+                        </p>
+                        <p class="number">Phone: +2609 742868 88</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="second_header">
+            <div class="nav_container">
+
+                <nav>
+
+                    <input type="checkbox" name="" id="menu">
+                    <button class="menu">
+                        <label class="menu2" for="menu">
+
+                            <i class="fa-solid fa-bars fa-2xl"></i>
+                            <span>MENU</span>
+                        </label>
+
+                        <div class="appointment">
+                            <a href="#" class="make_apo"> <span>Make An</span> Appointment</a>
+                        </div>
+                    </button>
+
+                    <div class="phone_hide">
+                        <ul>
+                            <li><a href="./index.html" id="first">home</a></li>
+                            <li><a href="./about.html">about</a></li>
+                            <li><a href="./index.html#services">services</a></li>
+                            <li><a href="#departments">departments</a></li>
+                            <li><a href="./doctors.html">doctors</a></li>
+                            
+                            <li><a href="./pricing.html">pricing</a></li>
+                            <li><a href="./blogs.html">blog</a></li>
+                            <li><a href="./contacts.html">contact</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="appointment2">
+                        <a href="#" class="make_apo">Make An Appointment</a>
+                    </div>
+
+
+                </nav>
+            </div>
+        </div>
+    </header>
+    <!-- body starts -->
+
+    <section class="home_about" id="home_about">
+        <div class="wrapper box">
+            <h1>Clinical Department</h1>
+            <p>home > departments</p>
+        </div>
+    </section>
+
+    <!-- fighting begines here -->
+
+    <section class="department_section " id="departments">
+        <div class="ti">
+            <p class="sub_title">DEPARTMENTS</p>
+
+            <h1>Clinic Departments</h1>
+            <p>Separated they live in. A small river named Duden flows by their place and supplies it with the necessary
+                regelialia. It is a paradisematic country</p>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="#" class="active" onclick="showContent(event, 'neurological')">Neurological</a></li>
+                <li><a href="#" onclick="showContent(event, 'surgical')">Surgical</a></li>
+                <li><a href="#" onclick="showContent(event, 'dental')">Dental</a></li>
+                <li><a href="#" onclick="showContent(event, 'ophthalmology')">Ophthalmology</a></li>
+                <li><a href="#" onclick="showContent(event, 'cardiology')">Cardiology</a></li>
+            </ul>
+        </nav>
+
+        <div id="neurological" class="content-section active box">
+            <div class="about_container">
+                <div class="image_about neurological">
+                </div>
+                <div class="about_content">
+                    <div class="heading-section">
+                        <div>
+                            <h2>Neurological Deparments</h2>
+                        </div>
+                    </div>
+                    <div class="content_section">
+
+                        <div class="para">
+                            <p>On her way she met a copy. The copy warned the Little Blind Text, that where it came from
+                                it
+                                would have been rewritten a thousand times and everything that was left from its origin
+                                would be the word.
+                            </p>
+                        </div>
+                        <div class="about_services">
+                            <div class="service  brah">
+                                <div class="icon">
+
+                                    <i class="fa-solid fa-suitcase-medical fa-beat-fade"></i>
+                                </div>
+                                <div class="text">
+                                    <h3>Primary Care</h3>
+                                    <p>Far far away, behind the word mountains, far from the countries Vokalia.</p>
+                                </div>
+                            </div>
+
+                            <div class="service brah">
+                                <div class="icon">
+
+                                    <i class="fa-solid fa-eye-dropper fa-beat-fade"></i>
+                                </div>
+                                <div class="text">
+                                    <h3>Lab Test</h3>
+                                    <p>Far far away, behind the word mountains, far from the countries Vokalia.</p>
+                                </div>
+                            </div>
+
+                            <div class="service  brah">
+                                <div class="icon">
+                                    <i class="fa-solid fa-square-poll-horizontal fa-beat-fade"></i>
+                                </div>
+                                <div class="text">
+                                    <h3>SYMPTOM CHECK</h3>
+                                    <p>Far far away, behind the word mountains, far from the countries Vokalia.</p>
+                                </div>
+
+                            </div>
+
+                            <div class="service  brah">
+                                <div class="icon">
+                                    <i class="fa-solid fa-heart-pulse fa-beat-fade"></i>
+                                </div>
+
+                                <div class="text">
+                                    <h3>Heart Rate</h3>
+                                    <p>Far far away, behind the word mountains, far from the countries Vokalia.</p>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="surgical" class="content-section box">
+            <div class="about_container">
+                <div class="image_about surgical">
+                </div>
+                <div class="about_content">
+                    <div class="heading-section">
+                        <div>
+                            <h2>Surgical Deparments</h2>
+                        </div>
+                    </div>
+                    <div class="content_section">
+
+                        <div class="para">
+                            <p>On her way she met a copy. The copy warned the Little Blind Text, that where it came from
+                                it
+                                would have been rewritten a thousand times and everything that was left from its origin
+                                would be the word.
+                            </p>
+                        </div>
+                        <div class="about_services">
+                            <div class="service  brah">
+                                <div class="icon">
+
+                                    <i class="fa-solid fa-suitcase-medical fa-beat-fade"></i>
+                                </div>
+                                <div class="text">
+                                    <h3>Primary Care</h3>
+                                    <p>Far far away, behind the word mountains, far from the countries Vokalia.</p>
+                                </div>
+                            </div>
+
+
+                            <div class="service  brah">
+                                <div class="icon">
+
+                                    <i class="fa-solid fa-eye-dropper fa-beat-fade"></i>
+                                </div>
+                                <div class="text">
+                                    <h3>Lab Test</h3>
+                                    <p>Far far away, behind the word mountains, far from the countries Vokalia.</p>
+                                </div>
+                            </div>
+
+                            <div class="service  brah">
+                                <div class="icon">
+                                    <i class="fa-solid fa-square-poll-horizontal fa-beat-fade"></i>
+                                </div>
+                                <div class="text">
+                                    <h3>SYMPTOM CHECK</h3>
+                                    <p>Far far away, behind the word mountains, far from the countries Vokalia.</p>
+                                </div>
+
+                            </div>
+
+                            <div class="service  brah">
+                                <div class="icon">
+                                    <i class="fa-solid fa-heart-pulse fa-beat-fade"></i>
+                                </div>
+
+                                <div class="text">
+                                    <h3>Heart Rate</h3>
+                                    <p>Far far away, behind the word mountains, far from the countries Vokalia.</p>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="dental" class="content-section box">
+            <div class="about_container">
+                <div class="image_about dental">
+                </div>
+                <div class="about_content">
+                    <div class="heading-section">
+                        <div>
+
+                            <h2>Dental Deparments</h2>
+                        </div>
+                    </div>
+                    <div class="content_section">
+
+                        <div class="para">
+                            <p>On her way she met a copy. The copy warned the Little Blind Text, that where it came from
+                                it
+                                would have been rewritten a thousand times and everything that was left from its origin
+                                would be the word.
+                            </p>
+                        </div>
+                        <div class="about_services">
+                            <div class="service brah">
+                                <div class="icon">
+
+                                    <i class="fa-solid fa-suitcase-medical fa-beat-fade"></i>
+                                </div>
+                                <div class="text">
+                                    <h3>Primary Care</h3>
+                                    <p>Far far away, behind the word mountains, far from the countries Vokalia.</p>
+                                </div>
+                            </div>
+
+
+                            <div class="service brah">
+                                <div class="icon">
+
+                                    <i class="fa-solid fa-eye-dropper fa-beat-fade"></i>
+                                </div>
+                                <div class="text">
+                                    <h3>Lab Test</h3>
+                                    <p>Far far away, behind the word mountains, far from the countries Vokalia.</p>
+                                </div>
+                            </div>
+
+                            <div class="service brah">
+                                <div class="icon">
+                                    <i class="fa-solid fa-square-poll-horizontal fa-beat-fade"></i>
+                                </div>
+                                <div class="text">
+                                    <h3>SYMPTOM CHECK</h3>
+                                    <p>Far far away, behind the word mountains, far from the countries Vokalia.</p>
+                                </div>
+
+                            </div>
+
+                            <div class="service brah">
+                                <div class="icon">
+                                    <i class="fa-solid fa-heart-pulse fa-beat-fade"></i>
+                                </div>
+
+                                <div class="text">
+                                    <h3>Heart Rate</h3>
+                                    <p>Far far away, behind the word mountains, far from the countries Vokalia.</p>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="ophthalmology" class="content-section box">
+            <div class="about_container">
+                <div class="image_about ophthalmology">
+                </div>
+                <div class="about_content">
+                    <div class="heading-section">
+                        <div>
+
+                            <h2>Ophthalmology Deparments</h2>
+                        </div>
+                    </div>
+                    <div class="content_section">
+
+                        <div class="para">
+                            <p>On her way she met a copy. The copy warned the Little Blind Text, that where it came from
+                                it
+                                would have been rewritten a thousand times and everything that was left from its origin
+                                would be the word.
+                            </p>
+                        </div>
+                        <div class="about_services">
+                            <div class="service brah">
+                                <div class="icon">
+
+                                    <i class="fa-solid fa-suitcase-medical fa-beat-fade"></i>
+                                </div>
+                                <div class="text">
+                                    <h3>Primary Care</h3>
+                                    <p>Far far away, behind the word mountains, far from the countries Vokalia.</p>
+                                </div>
+                            </div>
+
+
+                            <div class="service brah">
+                                <div class="icon">
+
+                                    <i class="fa-solid fa-eye-dropper fa-beat-fade"></i>
+                                </div>
+                                <div class="text">
+                                    <h3>Lab Test</h3>
+                                    <p>Far far away, behind the word mountains, far from the countries Vokalia.</p>
+                                </div>
+                            </div>
+
+                            <div class="service brah">
+                                <div class="icon">
+                                    <i class="fa-solid fa-square-poll-horizontal fa-beat-fade"></i>
+                                </div>
+                                <div class="text">
+                                    <h3>SYMPTOM CHECK</h3>
+                                    <p>Far far away, behind the word mountains, far from the countries Vokalia.</p>
+                                </div>
+
+                            </div>
+
+                            <div class="service brah">
+                                <div class="icon">
+                                    <i class="fa-solid fa-heart-pulse fa-beat-fade"></i>
+                                </div>
+
+                                <div class="text">
+                                    <h3>Heart Rate</h3>
+                                    <p>Far far away, behind the word mountains, far from the countries Vokalia.</p>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="cardiology" class="content-section box">
+            <div class="about_container">
+                <div class="image_about cardiology">
+                </div>
+                <div class="about_content">
+                    <div class="heading-section">
+                        <div>
+                            <h2>Cardiology Deparments</h2>
+                        </div>
+                    </div>
+                    <div class="content_section">
+
+                        <div class="para">
+                            <p>On her way she met a copy. The copy warned the Little Blind Text, that where it came from
+                                it
+                                would have been rewritten a thousand times and everything that was left from its origin
+                                would be the word.
+                            </p>
+                        </div>
+                        <div class="about_services">
+                            <div class="service brah">
+                                <div class="icon">
+
+                                    <i class="fa-solid fa-suitcase-medical fa-beat-fade"></i>
+                                </div>
+                                <div class="text">
+                                    <h3>Primary Care</h3>
+                                    <p>Far far away, behind the word mountains, far from the countries Vokalia.</p>
+                                </div>
+                            </div>
+
+
+                            <div class="service brah">
+                                <div class="icon">
+
+                                    <i class="fa-solid fa-eye-dropper fa-beat-fade"></i>
+                                </div>
+                                <div class="text">
+                                    <h3>Lab Test</h3>
+                                    <p>Far far away, behind the word mountains, far from the countries Vokalia.</p>
+                                </div>
+                            </div>
+
+                            <div class="service brah">
+                                <div class="icon">
+                                    <i class="fa-solid fa-square-poll-horizontal fa-beat-fade"></i>
+                                </div>
+                                <div class="text">
+                                    <h3>SYMPTOM CHECK</h3>
+                                    <p>Far far away, behind the word mountains, far from the countries Vokalia.</p>
+                                </div>
+
+                            </div>
+
+                            <div class="service brah">
+                                <div class="icon">
+                                    <i class="fa-solid fa-heart-pulse fa-beat-fade"></i>
+                                </div>
+
+                                <div class="text">
+                                    <h3>Heart Rate</h3>
+                                    <p>Far far away, behind the word mountains, far from the countries Vokalia.</p>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <div class="footer_wrapper">
+            <div class="first">
+                <div class="logo">
+                    <h1 class="doc_logo">
+                        Dr.<span id="special">Fiero</span>
+                    </h1>
+                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there
+                        live the blind texts.</p>
+                </div>
+
+                <div class="have_questions">
+                    <h3>Have Questions?</h3>
+                    <ul>
+                        <li class="fa-fade">
+                            <i class="fa-solid fa-location-dot"></i>
+
+                            Matero St. Lusaka, ZM
+                        </li>
+                        <li class="fa-fade">
+
+                            <i class="fa-solid fa-phone"></i>
+                            +260 974286888
+                        </li>
+                        <li class="fa-fade">
+                            <i class="fa-regular fa-envelope"></i>
+
+                            info@fierotechnologies.com
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="icons">
+                    <a href="#">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    <a href="#">
+                        <i class="fa-brands fa-google"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa-brands fa-x-twitter"></i>
+                    </a>
+                </div>
+
+            </div>
+            <div class="second">
+                <div class="links">
+                    <h3>Links</h3>
+                    <ul>
+                        <li>
+                            <a href="#">
+                            <i class="fa-solid fa-beat-fade fa-arrow-right">
+
+                            </i> Home
+                            </a>                    </li>
+                        <li>
+                            <a href="#"><i class="fa-solid fa-beat-fade fa-arrow-right"></i>About
+                            </a>
+                        <li>
+                            <a href="#"><i class="fa-solid fa-beat-fade fa-arrow-right"></i>Services
+                            </a>
+                        <li>
+                            <a href="#"><i class="fa-solid fa-beat-fade fa-arrow-right"></i>Departments
+                            </a>
+                        <li>
+                            <a href="#"><i class="fa-solid fa-beat-fade fa-arrow-right"></i>Contacts
+                            </a>
+                    </ul>
+                </div>
+
+                <div class="sumary_services">
+                    <h3>Services</h3>
+                    <ul>
+                        <li>
+                            <a href="#">
+                            <i class="fa-solid fa-beat-fade fa-arrow-right"></i>Neurogy
+                            </a>                    </li>
+                        <li>
+                            <a href="#">
+                            <i class="fa-solid fa-beat-fade fa-arrow-right"></i>Dentist
+                            </a>                    </li>
+                        <li>
+                            <a href="#">
+                            <i class="fa-solid fa-beat-fade fa-arrow-right"></i>Ophthal
+                            mology
+                        </a>
+                        <li>
+                            <a href="#">
+                            <i class="fa-solid fa-beat-fade fa-arrow-right"></i>Cardiol
+                            ogy
+                        </a>
+                        <li>
+                            <a href="#">
+                            <i class="fa-solid fa-beat-fade fa-arrow-right"></i>Surgery
+                            </a>                    </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="third">
+                <div class="our_recent_blog">
+                    <h3>Recent Blog</h3>
+                    <div class="first_recent_blog">
+                        <div class="image one">
+
+                        </div>
+                        <div class="contents">
+                            <p class="content">
+                                Even the all-powerful Pointing has no control about
+                            </p>
+                            <p class="links">
+                                <i class="fa-solid fa-calendar-days"></i>
+                                Jan 19, 2025 <br>
+                                <i class="fa-solid fa-user-tie"></i> Admin
+                                <i class="fa-solid fa-message"></i> 19
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="second_recent_blog">
+                        <div class="image two">
+
+                        </div>
+                        <div class="contents">
+                            <p class="content">
+                                Even the all-powerful Pointing has no control about
+                            </p>
+                            <p class="links">
+                                <i class="fa-solid fa-calendar-days"></i>
+                                Jan 19, 2025 <br>
+                                <i class="fa-solid fa-user-tie"></i> Admin
+                                <i class="fa-solid fa-message"></i> 19
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="fourth">
+
+                <div class="oppening_hours">
+                    <h3 class="open">Opening Hours</h3>
+                    <p> <i class="fa-solid fa-clock"></i> We are open 24/7</p>
+                </div>
+
+                <div class="subscribe">
+                    <form action="#" method="post">
+                        <input type="email" name="email" id="email" placeholder="Enter email address" required>
+                        <button>Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="all_rights">
+
+            <p class="desktop_view">
+                Copyright ©2024 All rights reserved
+            <p id="tab_break">
+                | This template is developed By
+            <p class="phone_break">
+                Fiero Technologies
+            </p>
+            </p>
+            </p>
+
+        </div>
+    </footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="./js/script.js"></script>
+    <script src="./js/animation.js"></script>
+</body>
+
+</html>
