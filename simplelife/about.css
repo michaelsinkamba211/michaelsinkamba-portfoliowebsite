@@ -1,0 +1,541 @@
+*{
+  box-sizing: border-box;
+}
+
+/*
+typography for vavigation bar
+*/
+
+footer{
+  width: 100%;
+  margin: 0 auto;
+}
+
+.footer{
+  display: flex;
+  justify-content: center;
+  line-height: 0;
+  flex-direction: column;
+  background: #143774 0% 0% no-repeat padding-box;
+  text-align: center;
+  color: white;
+  width: 100%;
+  height: 209px;
+}
+
+
+
+h1,
+h2,
+h3{
+ font-family: 'Lora', serif;
+ font-weight: 400;
+ color: #143774;
+}
+
+h3{
+  color: #1792d2;
+}
+
+h2{
+  font-size: 1.5rem;
+}
+
+
+p{
+  font-size: 1.1rem;
+}
+
+h1{
+ font-size: 1.3rem;
+}
+
+.current{
+  border-bottom:1px solid #707070 ;
+  padding-bottom: .3rem;
+}
+
+.footer_tittle{
+  color: white;
+}
+
+
+nav ul li a{
+ font-size: 1rem;
+ color: #707070;
+ text-transform: uppercase;
+}
+
+.subtitle{
+ font-size: .8rem;
+ color: #1792d2;
+}
+
+
+
+.main-widget{
+  height: 356px;
+}
+
+.main-widget,
+.secondary-widget{
+  margin: 1rem 0;
+  border: 20px solid #EBEBEB;
+  padding: 1.5rem;
+}
+
+.small-widget-images{
+  height: 87px;
+}
+
+
+/*
+
+to get fonts
+
+*/
+
+
+
+ /* article title */
+
+ .article-tittle{
+  font-size: 1.5rem;
+ }
+
+ .article-read-more,
+ .article-info{
+  font-size: .875rem;
+ }
+
+ .article-read-more{
+  color: #1792d2;
+  text-decoration: none;
+  font-weight: 700;
+ }
+
+ .article-read-more:hover,
+ .article-read-more:focus{
+  color: #143774;
+  text-decoration: underline;
+ }
+
+ #starting-line{
+  font-weight: 450;
+ }
+
+ #link-inside{
+  font-weight: 400;
+  text-decoration: none;
+  color: #1792d2;
+ }
+
+ #link-inside:hover,
+ #link-inside:focus{
+  color: #707070;
+  text-decoration: underline;
+ }
+
+
+
+
+ /*
+================ 
+layout for navigation bar
+================ 
+ */
+
+ body{
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 1.125rem;
+  font-weight: 300;
+ }
+
+
+header{
+  width:100%;
+  margin: 0 auto;
+  text-align: center;
+  background-color: #cfcfcf;
+  padding: 1rem 0rem;
+  display: flex;
+  justify-content: center;
+}
+.header-wrapper{
+  width: 97%;
+  margin: 0 auto;
+}
+
+
+
+
+
+
+img{
+  max-width: 100%;
+  display: block;
+  width: 100%;
+  height: 242px;
+}
+
+
+nav ul li{
+  list-style-type: none;
+  margin-bottom: .5rem;
+}
+
+nav  ul{
+  padding: 0;
+}
+
+
+
+nav ul li a{
+  text-decoration: none;
+}
+
+
+/* nav{
+  display: flex;
+  justify-content: center;
+  margin: .5rem 0;
+} */
+
+/* body layout */
+.container{
+  margin: 1rem 1rem ;
+  /* width: 95%; */
+}
+
+.hold-container{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+article{
+  margin: 2rem 0;
+  /* padding-bottom: 1rem; */
+  border-bottom: 1.5px solid  #707070;
+}
+
+p{
+  color: #707070;
+}
+
+.widget-image{
+  object-fit: cover;
+  max-height: 400px;
+}
+
+/*
+================ 
+small tablet view for body //medium screens
+================ 
+ */
+
+ /* @media screen and (min-width: 550px) and (max-width: 700px) {
+
+
+ } */
+
+
+/*
+================ 
+big tablet view //medium screens
+================ 
+
+*/
+ @media screen and (min-width: 550px) and (max-width: 1034px) {
+  .header-wrapper{
+    display: block;
+  }
+
+  h1{
+    color: blue;
+  }
+
+  nav ul{
+    display: flex;
+    justify-content: center;
+  }
+
+  nav ul li{
+    list-style-type: none;
+    margin-bottom: 0;
+    margin-left: 1.2rem;
+  }
+}
+
+ 
+
+
+/*
+================ 
+computer view //big screens
+================ 
+ */
+
+ 
+ @media screen and (min-width:900px ){
+  .header-wrapper{
+    display: flex;
+    justify-content:space-between;
+  }
+
+
+  header{
+    flex-direction: column;
+  }
+
+  nav ul{
+    display: flex;
+  }
+
+  h1{
+    color: red;
+    
+  }
+
+  nav ul li{
+    list-style-type: none;
+    margin-bottom: 0;
+    margin-left: 1.2rem;
+  }
+}
+
+
+
+/* body media qieries */
+
+/*
+trying negative margin effect
+
+
+@media screen and (min-width: 550px) and (max-width: 1034px) {
+
+  img{
+    padding-bottom: 1rem;
+  }
+
+  .featured-tittle,
+  .recent-tittle{
+    margin-top: -2.3rem;
+  }
+
+  .article-info{
+    text-align: right;
+  }
+
+}
+
+*/
+
+
+
+@media screen and (min-width: 799px){
+
+  .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  .aside-widget{
+    width: 100;
+    padding-top: 0;
+  }
+
+  main{
+    width: %;
+  }
+
+}
+
+
+.main-widget{
+  margin: 0rem 0;
+}
+
+article{
+  margin: 0rem 0;
+}
+
+
+
+.article-tittle{
+  font-size: 1rem;
+ }
+h2{
+  font-size: 1.5rem;
+}
+
+h3{
+  font-size:1.3rem;
+}
+
+
+p{
+  font-size: 1rem;
+}
+
+.widget-body{
+  font-size: 1.1rem;
+}
+
+
+img{
+  padding-top:1rem ;
+}
+
+.widget-tittle{
+  font-family: 'Ubuntu';
+  font-weight: 700;
+}
+
+
+
+.small-widget-tittle,
+.widget-tittle{
+  font-size: 1.1rem;
+  color: #143774;
+}
+
+.article-featured{
+  display: flex;
+  flex-direction: column;
+}
+.order-tittle{
+  order: -1;
+  padding: 0;
+  margin: 0;
+}
+
+.widget{
+  border-width: 20px;
+  padding: .6rem;
+}
+
+.main-widget{
+  height:400px ;
+  min-width: 158px;
+}
+
+.small-widget{
+  display: flex;
+  flex-direction: column;
+}
+
+.widget-image{
+  order: -1;
+}
+
+.small-widget{
+  border-bottom: 1px solid #707070;
+}
+
+.small-widget:last-child{
+  border-bottom: 0;
+}
+
+
+
+
+@media screen and (min-width: 800px){
+  img{
+    background-position: center;
+    background-size: cover;
+    margin: 0 auto;
+    height: 350px;
+  }
+  .small-widget-images{
+    height: 350px;
+  }
+
+  .aside-widget{
+    width: 40%;
+  }
+
+  main{
+    width: 50%;
+  }
+
+  .article-info{
+    order: 2;
+  }
+  .order-tittle{
+    order: 3;
+  }
+  .order-img{
+    order: 1;
+  }
+
+  .featured-body{
+    order: 4;
+  }
+
+  .article-read-more{
+    order: 5;
+  }
+
+  .aside-widget{
+    width: 20%;
+    padding-top: 0;
+  }
+
+  main{
+    width: 75%;
+  }
+  
+  
+
+
+  /* .widget-image{
+    height: 250px;
+  } */
+
+
+  .main-widget{
+    padding-top: 0;
+    height: 400px;
+  }
+
+  .widget-image{
+    height: 400px;
+  }
+
+
+
+  .small-widget-images{
+    height: 200px;
+    width: 90%;
+  }
+
+}
+
+.article-featured, 
+  .article-recent{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 1rem;
+    
+  }
+
+
+.forMain{
+  padding-top: 1rem;
+}
+
+.container,
+.header{
+    min-width: 350px;
+  }
+
+  
+
+  .widget-image{
+    height: 450px;
+    object-fit: cover;
+    background-position: center;
+  }
+
+
