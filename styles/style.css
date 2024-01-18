@@ -993,6 +993,14 @@ section {
   background-size: cover;
 }
 
+.works .coding .clinic {
+  background: url(../images/clinic.PNG);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
 .works .coding .simple-life,
 .works .coding .portfolio,
 .works .coding .school {
