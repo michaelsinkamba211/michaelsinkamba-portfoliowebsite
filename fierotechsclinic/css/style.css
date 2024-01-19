@@ -1464,7 +1464,7 @@ aside .aside_container .right {
   z-index: -1;
 }
 
-.contact_wrapper::before {
+/* .contact_wrapper::before {
   content: "";
   position: absolute;
   width: 50%;
@@ -1473,7 +1473,7 @@ aside .aside_container .right {
   right: 0;
   background-color: #fff;
   z-index: -1;
-}
+} */
 
 
 .contacts {
@@ -1575,15 +1575,12 @@ aside .aside_container .right {
     grid-column: 12/13;
   }
 
-  .contact_wrapper::after, 
-  .contact_wrapper::before{
+  .contact_wrapper::after{
     width: 100%;
     background-color: transparent;
   }
 
-  .contact_wrapper ::before{
-    background-color: #fff;
-  }
+
   .contacts .contact_wrapper .first .form {
     flex-direction: row;
   }
@@ -1681,21 +1678,96 @@ aside .aside_container .right {
   
 }
 
+
+/* Target autofilled input fields */
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 30px var(--primary-color) inset !important; /* Adjust the color as needed */
+}
+
+/* Target autofilled textareas */
+textarea:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 30px var(--primary-color) inset !important; /* Adjust the color as needed */
+}
+
+/* Target autofilled select elements */
+select:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 30px var(--primary-color) inset !important; /* Adjust the color as needed */
+}
+
+/* You can also style other properties like background-color or color if needed */
+input:-webkit-autofill,
+textarea:-webkit-autofill,
+select:-webkit-autofill {
+  background-color: var(--primary-color) !important; /* Adjust the color as needed */
+  color: black !important; /* Adjust the color as needed */
+}
+
+input:focus{
+  background-color: red;
+}
+
+
 .contact_wrapper .right .appoint {
   background: #ff8000 !important;
   border: 1px solid #ff8000 !important;
   color: #fff;
   width: fit-content;
-  margin: 10px auto !important;
-  height: 60px !important;
-  line-height: 30px !important;
+  /* margin-top: 20px; */
   border-radius: 30px;
   margin-left: 10px !important;
-  font-size: 1.2rem;
+  font-size: 1rem;
   cursor: pointer;
   justify-content: center;
-  padding: 10px 35px;
+  padding: 10px 25px;
+  align-self: center;
+  /* height: 70px; */
 }
+
+.contacts :is(.radio, input){
+  height: 70px;
+}
+
+.contacts .right .radio{
+  display: flex;
+  align-items: center;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap:5px;
+  margin-top: 5px;
+}
+
+@media screen and (max-width:1100px){
+  .contacts .right .radio{
+    gap: 10px;
+    flex-direction: row;
+  }
+}
+
+@media screen and (max-width:350px){
+  .contacts .right .radio{
+    margin-top: 15px;
+    flex-direction: column;
+  }
+}
+
+
+.contacts .right .radios{
+  display: inline-block;
+  height: 15px !important;
+  width: 15px !important;  
+}
+
+
+.contacts .right .radio .fa-whatsapp{
+  color: green;
+}
+
+
+.contacts .right .radio .fa-envelope{
+  color: rgb(185, 11, 11);
+}
+
 
 input:focus,
 textarea:focus {
@@ -1764,8 +1836,6 @@ font-family: Prompt, sans-serif !important;
 
 
 
-
-
 .second .all_divs div .numberz {
   font-size: 2.8rem;
   color: var(--primary-color);
@@ -1813,6 +1883,7 @@ font-family: Prompt, sans-serif !important;
   font-size: 16px;
   background-color: #fafafa !important;
 }
+
 
 
 
