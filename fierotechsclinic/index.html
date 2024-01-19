@@ -58,7 +58,9 @@
                         <p class="icon">
                             <span class="fa-solid fa-paper-plane fa-beat-fade"></span>
                         </p>
-                        <p class="email"><a target="_blank" href="https://mail.google.com/mail/?view=cm&fs=1&to=michaelsinkamba211@email.com">Email: michaelsinkamba211@email.com</a>
+                        <p class="email"><a target="_blank"
+                                href="https://mail.google.com/mail/?view=cm&fs=1&to=michaelsinkamba211@email.com">Email:
+                                michaelsinkamba211@email.com</a>
                         </p>
                     </div>
 
@@ -1025,46 +1027,51 @@
 
                 <!--  -->
 
-        
-                <div class="form">
-                    <div class="left">
+                <form action="" method="post">
+                    <div class="form">
+                        <div class="left">
 
-                        <input type="text" name="firstname" id="firstname" value="First Name">
-                        <select id="services" name="services">
-                            <option value="">Select Your Services</option>
-                            <option value="primary_care">PRIMARY CARE</option>
-                            <option value="symptom_check">SYMPTOM CHECK</option>
-                            <option value="heart_rate">HEART RATE</option>
-                            <option value="emergency_care">Emergency Care</option>
-                        </select>
+                            <input type="text" name="firstname" id="firstname" value="First Name" required>
 
-                        <!-- insert date here -->
+                            <select id="services" class="services_app" name="services">
+                                <option value="">Select Your Services</option>
+                                <option value="primary_care">PRIMARY CARE</option>
+                                <option value="symptom_check">SYMPTOM CHECK</option>
+                                <option value="heart_rate">HEART RATE</option>
+                                <option value="emergency_care">Emergency Care</option>
+                            </select>
 
-                        <div id="datepicker-container">
-                            <input type="text" id="datepicker-input" placeholder="Date" required>
-                            <div id="datepicker"></div>
+                            <!-- insert date here -->
+
+                            <div id="datepicker-container">
+                                <input type="text" id="datepicker-input" placeholder="Date" required>
+                                <div id="datepicker"></div>
+                            </div>
+
+                            <!-- end insert date ends -->
+                            <textarea name="message" id="message" cols="40" rows="2" placeholder="Message"></textarea>
+
                         </div>
 
-                        <!-- end insert date ends -->
-                        <textarea name="message" id="message" cols="40" rows="2" placeholder="Message"></textarea>
+                        <div class="right">
+                            <input type="text" name="lastname" id="lastname" value="Last Name" required>
+                            <input type="number" name="phone" id="phone" placeholder="+260" required>
 
+
+                            <select id="time" class="time_appo" name="time">
+                                <option value="">Time</option>
+                                <option value="8.00 - 10.00">8.00 - 10.00</option>
+                                <option value="10.00 - 12.00">10.00 - 12.00</option>
+                                <option value="14.00 - 16.00">14.00 - 16.00</option>
+                                <option value="16.00 - 18.00">16.00 - 18.00</option>
+                            </select>
+                            <button class="appoint" onclick="return sendToWhatsapp(event)">Appointment</button>
+
+                        </div>
                     </div>
 
-                    <div class="right">
-                        <input type="text" name="lastname" id="lastname" value="Last Name" required>
-                        <input type="number" name="phone" id="phone" placeholder="+260" required>
+                </form>
 
-
-                        <select id="time" name="time">
-                            <option value="">Time</option>
-                            <option value="primary_care">8.00 - 10.00</option>
-                            <option value="symptom_check">10.00 - 12.00</option>
-                            <option value="heart_rate">14.00 - 16.00</option>
-                            <option value="emergency_care">16.00 - 18.00</option>
-                        </select>
-                        <button class="appoint">Appointment</button>
-                    </div>
-                </div>
 
             </div>
 

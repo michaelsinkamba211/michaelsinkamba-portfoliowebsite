@@ -332,6 +332,14 @@ function validateForm() {
 
 
 // form fonr contact
+// $(function() {
+//   $("#datepicker").datepicker();
+//   $("#whatsapp-link").on("click", function(event) {
+//       event.preventDefault();
+//       submitForm();
+//   });
+// });
+
 // function submitForm() {
 //   var firstName = document.getElementById("firstname").value;
 //   var lastName = document.getElementById("lastname").value;
@@ -349,18 +357,59 @@ function validateForm() {
 //                         "Phone: " + phone + "\n" +
 //                         "Time: " + time;
 
+//   var phoneNumber = "+260974286888";
+//   var encodedMessage = encodeURIComponent(whatsappMessage);
+
 //   // Replace the following line with your server-side script to handle the WhatsApp API
+//   window.open("https://wa.me/" + phoneNumber + "?text=" + encodedMessage, '_blank').focus();
 //   // This is just a placeholder and won't actually send the message
 //   alert("WhatsApp message:\n\n" + whatsappMessage);
 // }
 
-// $(function() {
-//   $("#datepicker").datepicker();
-//   $("#whatsapp-link").on("click", function(event) {
-//       event.preventDefault(); // Prevent the default behavior of the link
-//       submitForm(); // You can remove this line if you don't want to alert the message
-//       var phoneNumber = "+260974286888";
-//       var encodedMessage = encodeURIComponent("Appointment Request:\n\n" + whatsappMessage);
-//       window.location.href = "https://wa.me/" + phoneNumber + "?text=" + encodedMessage;
-//   });
-// });
+
+
+function sendToWhatsapp(event) {
+  // Prevent the default form submission behavior
+  event.preventDefault();
+
+  // Get input values
+  let firstName = document.getElementById("firstname").value;
+  let lastName = document.getElementById("lastname").value;
+  let services = document.querySelector(".services_app").value;
+  let date = document.getElementById("datepicker-input").value;
+  let message = document.getElementById("message").value;
+  let phone = document.getElementById("phone").value;
+  let time = document.querySelector(".time_appo").value;
+
+  // Basic validation
+  if (!firstName || !lastName || !services || !date || !message || !phone || !time) {
+    alert("Please fill in all required fields.");
+    return false;
+  }
+
+  // Construct message
+  let messageText =
+    "Name: " + firstName + " " + lastName + "\n" +
+    "Services: " + services + "\n" +
+    "Date: " + date + "\n" +
+    "Message: " + message + "\n" +
+    "Phone: " + phone + "\n" +
+    "Time: " + time;
+
+  // Ask for confirmation
+  if (confirm("Are you sure you want to send the following details?\n\n" + messageText)) {
+    // If user clicks "OK," then proceed to open WhatsApp link
+    let number = "+260974286888";
+    let url = "https://wa.me/" + number + "?text=" + encodeURIComponent(messageText);
+    window.open(url, '_blank').focus();
+  } else {
+    // If user clicks "Cancel," do nothing or provide feedback
+    alert("Operation canceled by user.");
+  }
+
+  // Return false to prevent form submission
+  return false;
+}
+
+
+
