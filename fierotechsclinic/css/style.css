@@ -9,6 +9,7 @@
   list-style-type: none;
 }
 
+
 html,
 body {
   overflow-x: hidden;
@@ -32,6 +33,11 @@ body {
   --main-color: #ff8000;
   --white-color: #fff;
 }
+
+a{
+  color: var(--secondary-text-color);
+}
+
 
 body {
   background-color: var(--white-color);
@@ -984,11 +990,16 @@ aside .aside_container .right {
   height: 450px;
   aspect-ratio: 1;
   align-self: center;
+  transition: all .3s ease-in-out;
 }
 
 .department_section .about_container .neurological {
   background: url(../images/dept-1.jpg) center no-repeat;
   background-size: cover !important;
+}
+
+.department_section .about_container .image_about:hover {
+  transform: scale(1.05);
 }
 
 .department_section .about_container .surgical {
@@ -1344,15 +1355,15 @@ aside .aside_container .right {
 }
 
 .all_testimonials .testify .twos {
-  background: url(../images/person_2.jpg);
+  background: url(../images/person_1.jpg);
 }
 
 .all_testimonials .testify .thirds {
-  background: url(../images/person_3.jpg);
+  background: url(../images/person_1.jpg);
 }
 
 .all_testimonials .testify .fours {
-  background: url(../images/person_4.jpg);
+  background: url(../images/person_1.jpg);
 }
 
 .all_testimonials .testify .image {

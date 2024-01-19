@@ -331,3 +331,36 @@ function validateForm() {
 }
 
 
+// form fonr contact
+// function submitForm() {
+//   var firstName = document.getElementById("firstname").value;
+//   var lastName = document.getElementById("lastname").value;
+//   var services = document.getElementById("services").value;
+//   var date = document.getElementById("datepicker-input").value;
+//   var message = document.getElementById("message").value;
+//   var phone = document.getElementById("phone").value;
+//   var time = document.getElementById("time").value;
+
+//   var whatsappMessage = "Appointment Request:\n\n" +
+//                         "Name: " + firstName + " " + lastName + "\n" +
+//                         "Services: " + services + "\n" +
+//                         "Date: " + date + "\n" +
+//                         "Message: " + message + "\n" +
+//                         "Phone: " + phone + "\n" +
+//                         "Time: " + time;
+
+//   // Replace the following line with your server-side script to handle the WhatsApp API
+//   // This is just a placeholder and won't actually send the message
+//   alert("WhatsApp message:\n\n" + whatsappMessage);
+// }
+
+// $(function() {
+//   $("#datepicker").datepicker();
+//   $("#whatsapp-link").on("click", function(event) {
+//       event.preventDefault(); // Prevent the default behavior of the link
+//       submitForm(); // You can remove this line if you don't want to alert the message
+//       var phoneNumber = "+260974286888";
+//       var encodedMessage = encodeURIComponent("Appointment Request:\n\n" + whatsappMessage);
+//       window.location.href = "https://wa.me/" + phoneNumber + "?text=" + encodedMessage;
+//   });
+// });

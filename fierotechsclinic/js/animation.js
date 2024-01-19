@@ -71,13 +71,13 @@ var prevScrollpos = window.pageYOffset;
 window.onscroll = function () {
   var currentScrollPos = window.pageYOffset;
   if (prevScrollpos > currentScrollPos) {
-    // $("header").css("display", "flex");
-    $("header").css("opacity", "1");
-    // $("header").css("flex-direction", "column");
+    $("header").css("display", "flex");
+    // $("header").css("opacity", "1");
+    $("header").css("flex-direction", "column");
   } else {
 
-    // $("header").css("display", "none");
-    $("header").css("opacity", "0");
+    $("header").css("display", "none");
+    // $("header").css("opacity", "0");
   }
   prevScrollpos = currentScrollPos;
 };
