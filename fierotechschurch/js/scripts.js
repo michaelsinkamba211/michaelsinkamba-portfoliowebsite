@@ -3,7 +3,7 @@ const h2Element = document.querySelector(".home_content h2");
 const onesElement = document.querySelector(".home .ones");
 const twosElement = document.querySelector(".home .twos");
 
-const images = ["../images/home_img.jpg", "../images/home_image.jpg"];
+const imges = ["../images/home_img.jpg", "../images/home_image.jpg"];
 
 const texts = [
   "We love <span id='special'>God</span> we believe in God",
