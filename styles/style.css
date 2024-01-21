@@ -949,10 +949,7 @@ section {
 .first-coding-work .frontend-development,
 .third-coding-work .frontend-development {
   /* width: 300px; */
-  
-  /* aspect-ratio: 1; */
-  height: 160px;
-  height: 200px;
+  height: 220px;
   width: 100%;
   background-color: navy !important;
   border-bottom: 2px solid #bbb;
