@@ -1331,6 +1331,10 @@ footer{
   padding: 15px 5px;
 }
 
+footer div{
+  font-weight: 600 !important;
+}
+
 
 @media screen and (max-width:850px){
   footer p{
