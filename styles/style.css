@@ -708,6 +708,7 @@ section {
   grid-template-areas:
     "sub-tittle"
     "sub-coding";
+    
 }
 
 .services .coding .sub-tittle {
@@ -929,9 +930,7 @@ section {
 .works .coding .sub-coding {
   display: grid;
   gap: 10px;
-  grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
-  margin: 0 5px;
-  /* color: #03398053; */
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
 }
 
 .second-coding-work,
@@ -943,26 +942,33 @@ section {
   align-items: center;
   line-height: 40px;
   margin: 20px auto;
+  width: 100%;
 }
 
 .second-coding-work .frontend-development,
 .first-coding-work .frontend-development,
 .third-coding-work .frontend-development {
-  width: 300px;
+  /* width: 300px; */
+  
+  /* aspect-ratio: 1; */
   height: 160px;
+  height: 200px;
+  width: 100%;
+  background-color: navy !important;
   border-bottom: 2px solid #bbb;
   border-top-width: 0;
-  padding: 15px 0;
+  /* padding: 15px 0; */
   margin: 0 auto;
   color: #717171;
   box-shadow: 1px 2px 5px 0px rgba(0, 0, 0, 0.75);
+ 
 }
 
 /* orther styles  */
 
 .works .coding .simple-life {
   background: url(../images/newSimpleLlife.PNG);
-  background-position: center;
+  background-position: left center;
   background-repeat: no-repeat;
   background-size: cover;
 }

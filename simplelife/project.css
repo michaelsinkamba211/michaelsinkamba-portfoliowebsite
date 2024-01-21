@@ -11,6 +11,11 @@
 typography for vavigation bar
 */
 
+.hold-container, footer,header{
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
 footer{
   width: 100%;
   margin: 0 auto;
