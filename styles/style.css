@@ -1158,7 +1158,7 @@ textarea:focus {
   min-width: 180px;
   background-color: var(--top-bg);
   background-color: #bbb;
-  height: 100px;
+  /* padding: 20px 0; */
 }
 
 footer {
@@ -1168,8 +1168,6 @@ footer {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  height: 100px;
-
   margin-top: 50px;
   padding: 0 20px;
   width: 100%;
@@ -1323,4 +1321,35 @@ header ul li a{
 .contact h1{
   border-bottom: 1px solid #bbbbbb53;
   text-align: left;
+}
+
+footer{
+  flex-direction: row;
+  width: 100%;
+  align-items: center;
+  gap: 15px;
+  padding: 15px 5px;
+}
+
+
+@media screen and (max-width:850px){
+  footer p{
+    order: 2;
+    width: 100%;
+  }
+  footer div{
+    order: 1;
+    width: 100%;
+  }
+
+  footer{
+    flex-direction: column;
+  }
+}
+
+
+
+.footer-container #fiero{
+  color: rgb(213, 20, 20);
+  font-weight: 500;
 }
