@@ -1,4 +1,4 @@
-const homeElement = document.querySelector(".home");
+const homeElement = document.querySelector(".hme");
 const h2Element = document.querySelector(".home_content h2");
 const onesElement = document.querySelector(".home .ones");
 const twosElement = document.querySelector(".home .twos");
