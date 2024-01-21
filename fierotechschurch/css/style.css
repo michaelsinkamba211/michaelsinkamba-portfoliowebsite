@@ -27,6 +27,7 @@ body {
 }
 
 body {
+  scroll-behavior: smooth;
   overflow-x: hidden;
 }
 
@@ -997,7 +998,7 @@ section {
 
 .events {
   margin: 50px 10px;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
 }
 
 .events .sub_title {
