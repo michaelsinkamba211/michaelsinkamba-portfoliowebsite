@@ -1360,3 +1360,17 @@ footer div{
   color: rgb(213, 20, 20);
   font-weight: 500;
 }
+
+/* class="sub_titlez" */
+h2{
+  font-size: 1.4rem !important;
+}
+
+.sub_titlez{
+  font-size: 1.1rem !important;
+}
+
+h3{
+  font-size: .95rem;
+  color: #383636;
+}
