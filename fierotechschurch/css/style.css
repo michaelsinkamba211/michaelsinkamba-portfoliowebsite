@@ -361,7 +361,7 @@ nav input {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  height: 750px;
+  height: 100dvh !important;
   position: relative;
   z-index: -1;
   transition: all .5s ease-in-out;
