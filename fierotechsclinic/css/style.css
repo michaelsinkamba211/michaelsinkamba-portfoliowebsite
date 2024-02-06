@@ -420,9 +420,7 @@ header .nav_container ul a#first {
 }
 
 /* home */
-.home .wrapper_home {
-  height: fit-content;
-}
+
 @media all and (min-height: 300px) {
   .home .wrapper_home {
     height: 100dvh;
@@ -434,6 +432,7 @@ section.home {
   background-repeat: no-repeat;
   background-position: top center;
   background-size: cover;
+  height: 100dvh !important;
 }
 
 section .wrapper_home {
