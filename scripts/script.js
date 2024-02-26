@@ -65,7 +65,6 @@ document.querySelectorAll('ul a').forEach(link => {
 });
 
 
-
 // closing this link-container
 
 

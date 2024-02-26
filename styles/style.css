@@ -1011,6 +1011,12 @@ section {
   background-repeat: no-repeat;
   background-size: cover;
 }
+.works .coding .zedstores {
+  background: url(../images/zedstories.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
 
 .works .coding .simple-life,
