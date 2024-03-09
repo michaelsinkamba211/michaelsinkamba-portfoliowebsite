@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    /* Add your styles here */
+    .content-section {
+      display: none;
+    }
+
+    .active {
+      display: block;
+    }
+
+    nav {
+      margin-bottom: 20px;
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+    }
+
+    nav li {
+      margin-right: 10px;
+    }
+
+    .content-section h2 {
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <ul>
+      <li><a href="#" onclick="showContent('departments')">Departments</a></li>
+      <li><a href="#" onclick="showContent('surgical')">Surgical</a></li>
+      <li><a href="#" onclick="showContent('offices')">Offices</a></li>
+      <li><a href="#" onclick="showContent('doctors')">Doctors</a></li>
+    </ul>
+  </nav>
+
+  <div id="departments" class="content-section active">
+    <h2>Departments Content</h2>
+    <p>Content specific to departments...</p>
+  </div>
+
+  <div id="surgical" class="content-section">
+    <h2>Surgical Content</h2>
+    <p>Content specific to surgical...</p>
+  </div>
+
+  <div id="offices" class="content-section">
+    <h2>Offices Content</h2>
+    <p>Content specific to offices...</p>
+  </div>
+
+  <div id="doctors" class="content-section">
+    <h2>Doctors Content</h2>
+    <p>Content specific to doctors...</p>
+  </div>
+
+  <script>
+    function showContent(sectionId) {
+      // Hide all content sections
+      var contentSections = document.querySelectorAll('.content-section');
+      contentSections.forEach(function (section) {
+        section.classList.remove('active');
+      });
+
+      // Show the selected content section
+      var selectedSection = document.getElementById(sectionId);
+      selectedSection.classList.add('active');
+    }
+    
+  </script>
+
+</body>
+</html>

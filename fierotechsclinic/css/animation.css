@@ -14,7 +14,6 @@
     opacity: 1;
 }
 
-
 /* for services */
 
 .ani_service {
@@ -32,7 +31,6 @@
     transform: translate(0);
     opacity: 1;
 }
-
 
 
 @keyframes slideInFromLeft {
@@ -88,13 +86,13 @@
   }
   
   
-
   header {
     position: fixed;
     width: 100%;
     top: 0;
     z-index: 1000;
     transition: all 0.3s ease-in-out;
+    margin: 0 auto !important;
   }
 
 

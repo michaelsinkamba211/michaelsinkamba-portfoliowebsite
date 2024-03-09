@@ -1,5 +1,6 @@
 function showContent(event, sectionId) {
   event.preventDefault();
+
   // Hide all content sections
   var contentSections = document.querySelectorAll(".content-section");
   contentSections.forEach(function (section) {
@@ -329,6 +330,41 @@ function validateForm() {
   return true;
 }
 
+
+// form fonr contact
+// $(function() {
+//   $("#datepicker").datepicker();
+//   $("#whatsapp-link").on("click", function(event) {
+//       event.preventDefault();
+//       submitForm();
+//   });
+// });
+
+// function submitForm() {
+//   var firstName = document.getElementById("firstname").value;
+//   var lastName = document.getElementById("lastname").value;
+//   var services = document.getElementById("services").value;
+//   var date = document.getElementById("datepicker-input").value;
+//   var message = document.getElementById("message").value;
+//   var phone = document.getElementById("phone").value;
+//   var time = document.getElementById("time").value;
+
+//   var whatsappMessage = "Appointment Request:\n\n" +
+//                         "Name: " + firstName + " " + lastName + "\n" +
+//                         "Services: " + services + "\n" +
+//                         "Date: " + date + "\n" +
+//                         "Message: " + message + "\n" +
+//                         "Phone: " + phone + "\n" +
+//                         "Time: " + time;
+
+//   var phoneNumber = "+260974286888";
+//   var encodedMessage = encodeURIComponent(whatsappMessage);
+
+//   // Replace the following line with your server-side script to handle the WhatsApp API
+//   window.open("https://wa.me/" + phoneNumber + "?text=" + encodedMessage, '_blank').focus();
+//   // This is just a placeholder and won't actually send the message
+//   alert("WhatsApp message:\n\n" + whatsappMessage);
+// }
 
 
 function sendDetails(event, method) {

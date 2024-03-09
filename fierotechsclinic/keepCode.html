@@ -1,0 +1,98 @@
+<!-- form -->
+
+<form action="" method="post">
+    <div class="form">
+        <div class="left">
+
+            <input type="text" name="firstname" id="firstname" placeholder="first name" required>
+
+            <select id="services" class="services_app" name="services">
+                <option value="">select your services</option>
+                <option value="primary_care">Primary Care</option>
+                <option value="symptom_check">Symptom Check</option>
+                <option value="heart_rate">Heart Rate</option>
+                <option value="emergency_care">Emergency Care</option>
+            </select>
+
+            <!-- insert date here -->
+
+            <div id="datepicker-container">
+                <input type="text" id="datepicker-input" placeholder="date" required>
+                <div id="datepicker"></div>
+            </div>
+
+            <!-- end insert date ends -->
+            <textarea name="message" id="message" cols="40" rows="2" placeholder="message"></textarea>
+
+        </div>
+
+        <div class="right">
+            <input type="text" name="lastname" id="lastname" placeholder="last name" required>
+            <input type="number" name="phone" id="phone" placeholder="+260" required>
+
+
+            <select id="time" class="time_appo" name="time">
+                <option value="">prefered time</option>
+                <option value="8.00 - 10.00">8.00 - 10.00</option>
+                <option value="10.00 - 12.00">10.00 - 12.00</option>
+                <option value="14.00 - 16.00">14.00 - 16.00</option>
+                <option value="16.00 - 18.00">16.00 - 18.00</option>
+            </select>
+            <button class="appoint" onclick="return sendToWhatsapp(event)">make an appointment</button>
+
+        </div>
+    </div>
+
+</form>
+
+
+<script>
+
+
+    
+function sendToWhatsapp(event) {
+  // Prevent the default form submission behavior
+  event.preventDefault();
+
+  // Get input values
+  let firstName = document.getElementById("firstname").value.toUpperCase();
+  let lastName = document.getElementById("lastname").value.toUpperCase();
+  let services = document.querySelector(".services_app").value.toUpperCase();
+  let date = document.getElementById("datepicker-input").value.toUpperCase();
+  let message = document.getElementById("message").value.toUpperCase();
+  let phone = document.getElementById("phone").value.toUpperCase();
+  let time = document.querySelector(".time_appo").value.toUpperCase();
+
+  // Basic validation
+  if (!firstName || !lastName || !services || !date || !message || !phone || !time) {
+    alert("Please fill in all required fields.");
+    return false;
+  }
+
+  // Construct message
+  let messageText =
+    "DR.FIERO APPOINTMENT REQUEST" +
+     "\n" +
+    "Name: " + firstName + " " + lastName + "\n" +
+    "Services: " + services + "\n" +
+    "Date: " + date + "\n" +
+    "Message: " + message + "\n" +
+    "Phone: " + phone + "\n" +
+    "Time: " + time;
+
+  // Ask for confirmation
+  if (confirm("Are the following details correct?\n\n " + messageText)) {
+    // If user clicks "OK," then proceed to open WhatsApp link
+    let number = "+260974286888";
+    let url = "https://wa.me/" + number + "?text=" + encodeURIComponent(messageText);
+    window.open(url, '_blank').focus();
+  } else {
+    // If user clicks "Cancel," do nothing or provide feedback
+    alert("Operation canceled by user.");
+  }
+
+  // Return false to prevent form submission
+  return false;
+}
+
+</script>
