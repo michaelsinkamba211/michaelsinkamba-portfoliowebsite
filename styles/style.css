@@ -1017,6 +1017,12 @@ section {
   background-repeat: no-repeat;
   background-size: cover;
 }
+.works .coding .groupus {
+  background: url(../images/groupus.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
 
 .works .coding .simple-life,
