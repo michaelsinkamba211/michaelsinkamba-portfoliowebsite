@@ -308,7 +308,7 @@ section {
   order: 1;
 }
 
-.home .social-media-icons .fa-brands {
+.home .social-media-icons .fa-brands , .fa-solid{
   font-size: var(--medium-font);
   margin: 15px 0;
   cursor: pointer;
