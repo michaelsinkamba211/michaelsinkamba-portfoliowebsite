@@ -308,7 +308,7 @@ section {
   order: 1;
 }
 
-.home .social-media-icons .fa-brands , .fa-solid{
+.home .social-media-icons .fa-brands{
   font-size: var(--medium-font);
   margin: 15px 0;
   cursor: pointer;
@@ -560,6 +560,11 @@ section {
   background-color: transparent;
   color: black;
   
+}
+
+
+.skills .fa-database{
+  font-size: 1.7rem;
 }
 
 .personal-info .cv{
