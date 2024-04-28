@@ -57,6 +57,7 @@ text for header: rgb(195, 195, 195);
 body {
   font-size: 0.94rem;
   background-color: #f8f9fa;
+  background-color: #f8f9fa65;
 }
 
 header .main-header-container {
@@ -1178,7 +1179,7 @@ textarea:focus {
   width: 100%;
   min-width: 180px;
   background-color: var(--top-bg);
-  background-color: #bbb;
+  background-color: #f8f9fa;
   /* padding: 20px 0; */
 }
 
