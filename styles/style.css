@@ -7,8 +7,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  list-style: none;
-  text-decoration: none;
+  list-style: none !important;
+  text-decoration: none !important;
   scroll-behavior: smooth;
   scroll-padding-top: 2rem;
   font-family: "Prompt", sans-serif;
@@ -56,6 +56,7 @@ text for header: rgb(195, 195, 195);
 
 body {
   font-size: 0.94rem;
+  background-color: #f8f9fa;
 }
 
 header .main-header-container {
